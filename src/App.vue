@@ -1,13 +1,16 @@
 <template>
 
 <v-app id="body">
-
   <NavBar />
-  <v-content  class="grey">
+  <v-main>
+    <v-content  class="grey">
     <router-view></router-view>
   </v-content>
+  </v-main>
 
 </v-app>
+
+
 
 </template>
 
