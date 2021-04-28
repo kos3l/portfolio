@@ -33,6 +33,7 @@
                         <router-view></router-view>
                     </v-col>
                 </v-row>
+                <Footer />
 
 
 
@@ -52,10 +53,7 @@
                                   </router-link>
               </v-col>
             </v-row>
-            <Footer 
-            v-for="medialink in medialinks"
-            :key="medialink.link"
-            :medialink="medialink"/>
+            
           </v-container>
       </v-app>
 </template>
@@ -79,26 +77,7 @@ export default {
     
   },
 
-  data: () => {
-      return {
-            medialinks: [
-                {
-                    some: 'Github',
-                    link: 'https://github.com/kos3l'
-                },
-                {
-                    some: 'Linkedin',
-                    link: 'https://www.linkedin.com/feed/'
-                },
-                {
-                    some: 'Instagram',
-                    link: 'https://www.instagram.com/pimpoqe/'
-                },
-            ]
-        }
-    
 
-  },
 };
 </script>
 
@@ -142,7 +121,7 @@ export default {
 }
 #main-body{
   height: auto;
-  border: 2px solid black;
+
   border-top: 0;
 }
 #bottom-nav{

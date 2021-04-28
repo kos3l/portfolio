@@ -33,6 +33,7 @@ export default {
 
 #side-nav{
 background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 90%);
+border-bottom: 2px solid black;
 
 
 }
