@@ -39,8 +39,23 @@
 
             <v-row id="bottom-nav" class=".d-flex .d-sm-none">
               <v-col id="bottom-bar" cols="12">
+                <router-link :to="{ name: 'About'}" >
+                                    <button>
+                                    <span id="links-mobile"> ABOUT ME </span>
+                                    </button>
+                                  </router-link>
+                                  <v-icon left> mdi-checkbox-blank-circle-outline</v-icon>
+                                  <router-link :to="{ name: 'Contact'}" >
+                                    <button>
+                                    <span id="links-mobile"> CONTACT </span>
+                                    </button>
+                                  </router-link>
               </v-col>
             </v-row>
+            <Footer 
+            v-for="medialink in medialinks"
+            :key="medialink.link"
+            :medialink="medialink"/>
           </v-container>
       </v-app>
 </template>
@@ -49,6 +64,7 @@
 
 import SideNav from './components/SideNav'
 import Banner from './components/Banner.vue'
+import Footer from './components/Footer.vue'
 
 
 export default {
@@ -56,16 +72,33 @@ export default {
   name: 'App',
   components: {
     SideNav,
-    Banner
+    Banner,
+    Footer
   
     
     
   },
 
-  data: () => ({
+  data: () => {
+      return {
+            medialinks: [
+                {
+                    some: 'Github',
+                    link: 'https://github.com/kos3l'
+                },
+                {
+                    some: 'Linkedin',
+                    link: 'https://www.linkedin.com/feed/'
+                },
+                {
+                    some: 'Instagram',
+                    link: 'https://www.instagram.com/pimpoqe/'
+                },
+            ]
+        }
     
-   
-  }),
+
+  },
 };
 </script>
 
@@ -76,8 +109,10 @@ export default {
   color: black;
   
 }
+
 #content{
   padding: 0;
+  
 }
 #links{
   font-weight: 900;
@@ -96,45 +131,58 @@ export default {
 #top-nav{
   border: 2px solid black;
   height: 78px
-  
-  
-
 }
 #dark-mode-btn{
   border-right: 2px solid black;
   padding: 0px 40px 0px 40px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   display: flex;
   font-size: 27px;
 }
 #main-body{
-  height: 100vh;
+  height: auto;
   border: 2px solid black;
   border-top: 0;
 }
-@media screen and (min-width:1440px) {
-
-  #banner{
-    height: 245px;
-  }
+#bottom-nav{
+  display: none;
 }
+
 
 @media screen and (max-width:600px) {
   #top-nav{
     display: none;
+     
   }
+  #links-mobile{
+  font-size: 25px;
+}
  
-  #bottom-bar{
-    border: 2px solid black;
-    border-top: 0;
-    height: 10vh;
+ #bottom-nav {
+    z-index: 44444;
     position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    border: 2px solid black;
+    display: block;
+  
+    
+ }
+  #bottom-bar{
+    z-index: 4444;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
   }
 
   #main-body{
     margin-top: 0;
     height: 90vh;
+    
   }
   #skeleton{
     padding-top:0;
@@ -143,7 +191,7 @@ export default {
       display: none;
     }
     #content{
-
+     
     height: 60vh;
     border-bottom: 2px solid black;
   }

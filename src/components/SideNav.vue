@@ -8,6 +8,9 @@
                         
                       />
                     </router-link>
+                    <span id="mds-mobile" >
+                        MULTIMEDIA DESIGN STUDENT
+                    </span>
 
               </v-col>
               <v-col id="side-section" lg="12" md="12" sm="12" class="d-none d-sm-flex" >
@@ -29,12 +32,17 @@ export default {
 <style>
 
 #side-nav{
-background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 60%);
+background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 90%);
+
 
 }
 #parent{
-  width: 200px;
+  width: 10vw;
   height: auto;
+}
+#mds-mobile{
+  display: none;
+
 }
 
 
@@ -76,6 +84,19 @@ background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 60
     }
     #profile{
         height: 30vh;
+        justify-content: right;
+        padding-left: 45px;
+    }
+    #parent{
+      width: 30vw;
+    }
+    #mds-mobile{
+      font-size: 7vw;
+      font-weight: 300;
+      margin-left: 30px;
+      display: block;
+      
+
     }
 }
 </style>

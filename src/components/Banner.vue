@@ -13,10 +13,12 @@ export default {
 
 <style>
     #banner{
-
     height: 156px;
     border-bottom: 2px solid black;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(151,234,210) 90%);
     }
+
+
     @media screen and (min-width:1540px) {
 
     #banner{
