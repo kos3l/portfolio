@@ -9,14 +9,19 @@
                       />
                     </router-link>
                     <span id="mds-mobile" >
-                        MULTIMEDIA DESIGN STUDENT
+                        >KAROLINA KOSINSKA
+                        
+                        >MULTIMEDIA DESIGN STUDENT
+                        
                     </span>
+                    
 
               </v-col>
               <v-col id="side-section" lg="12" md="12" sm="12" class="d-none d-sm-flex" >
-                <span id="mds">
-                  MULTIMEDIA DESIGN STUDENT
-                </span>
+                
+                <div id="mds">
+                  >MULTIMEDIA DESIGN STUDENT
+                </div>
               </v-col>
           </v-col>
 </template>
@@ -32,7 +37,7 @@ export default {
 <style>
 
 #side-nav{
-background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 90%);
+background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 70%);
 border-bottom: 2px solid black;
 
 
@@ -60,15 +65,22 @@ border-bottom: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #side-section{
-  padding: 30px 10px 10px 30px
+  padding: 30px 20px 20px 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 #mds {
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 0.1rem;
 }
 
 @media screen and (min-width:1540px) {
@@ -77,6 +89,15 @@ border-bottom: 2px solid black;
     height: 490px;
     }
  }
+ @media screen and (max-width:1100px) {
+    #parent{
+      width: 17vw;
+    }
+    #mds {
+      font-size: 4.5vw;
+      font-weight: 300;
+    }
+}
 
  @media screen and (max-width:600px) {
     #side-nav{
@@ -85,19 +106,20 @@ border-bottom: 2px solid black;
     }
     #profile{
         height: 30vh;
+        display: flex;
         justify-content: right;
         padding-left: 45px;
+        flex-direction: row;
+        border-bottom: 0;
     }
     #parent{
       width: 30vw;
     }
     #mds-mobile{
-      font-size: 7vw;
+      font-size: 5vw;
       font-weight: 300;
       margin-left: 30px;
       display: block;
-      
-
     }
 }
 </style>

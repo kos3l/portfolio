@@ -4,11 +4,10 @@
           <v-container id="skeleton" fluid>
 
                 <v-row id="top-nav" >
-                    <v-col id="dark-mode-btn" lg="3" md="3" sm="0" class="d-none d-sm-flex">
-                      <button>
-                        <v-icon left> mdi-checkbox-blank-circle-outline</v-icon>
-                        <span id="links">DARK MODE</span>
-                      </button>
+                    <v-col id="dark-mode-btn" lg="3" md="3" sm="0">
+                        <div id="links-abt">
+                          >KAROLINA KOSINSKA
+                        </div>
                     </v-col>
                     <v-col id="nav" lg="9" md="9" sm="12" cols="12">
                                   <router-link :to="{ name: 'About'}" >
@@ -94,9 +93,15 @@ export default {
   
 }
 #links{
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.1rem;
-  font-size: 25px;
+  font-size: 1.5vw;
+  color: black;
+}
+#links-abt{
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 1.5vw;
   color: black;
 }
 #nav{
@@ -113,8 +118,8 @@ export default {
 }
 #dark-mode-btn{
   border-right: 2px solid black;
-  padding: 0px 40px 0px 40px;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 30px;
   align-items: center;
   display: flex;
   font-size: 27px;
@@ -127,7 +132,19 @@ export default {
 #bottom-nav{
   display: none;
 }
-
+@media screen and (max-width:1100px) {
+    #nav{
+  padding: 0px 40px 0px 40px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  font-size: 27px;
+  
+}
+#dark-mode-btn{
+  display: none
+}
+}
 
 @media screen and (max-width:600px) {
   #top-nav{
@@ -136,6 +153,9 @@ export default {
   }
   #links-mobile{
   font-size: 25px;
+}
+#dark-mode-btn{
+  display: none
 }
  
  #bottom-nav {

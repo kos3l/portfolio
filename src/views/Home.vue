@@ -19,8 +19,8 @@ export default {
     return {
       projects: [
         { 
-          title: 'Down under',
-          src: require('/src/assets/ilustrejszynFinished.png'),
+          title: 'Fanø flyer',
+          src: require('/src/assets/fano.png'),
           id: 1
         },
         { 
@@ -34,10 +34,10 @@ export default {
           id: 3
         },
         { 
-          title: 'Fanø flyer',
-          src: require('/src/assets/fano.png'),
+          title: 'Down under',
+          src: require('/src/assets/ilustrejszynFinished.png'),
           id: 4
-        }
+        },
       ]
     }
   }

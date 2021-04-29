@@ -51,7 +51,7 @@ export default {
     padding-top: 5vh;
     font-weight: 300;
     letter-spacing: 0.1rem;
-    font-size: 35px;
+    font-size: 2vw;
     
 }
 .project-inner{
@@ -90,6 +90,7 @@ export default {
         width: 56vw;
         height: 64vh;
     }
+    
 }
 @media screen and (max-width:600px) {
     .project{
