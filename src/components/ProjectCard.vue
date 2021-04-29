@@ -4,7 +4,7 @@
         <router-link :to="{ name: 'ProjectDetails', params: { id: project.id}}"> 
         <div class="project-inner">
             <div class="project-image-wrap">
-                <img :src="project.src" class="image ">
+                <img :src="project.src" class="image">
             </div>
             <div class="project-text-wrap">
                 <p class="text-center text-uppercase">

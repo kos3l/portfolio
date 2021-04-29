@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-
+            <Banner /> 
             <ProjectCard v-for="project in projects" :key="project.title" :project="project" />
             <router-view></router-view>
 
@@ -10,10 +10,12 @@
 
 <script>
 import ProjectCard from "/Users/karolinakosinska/Desktop/portfolio/src/components/ProjectCard"
+import Banner from '/src/components/Banner'
 export default {
   name: 'Home',
   components: {
     ProjectCard,
+    Banner
   }, 
   data() {
     return {

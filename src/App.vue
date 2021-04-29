@@ -28,7 +28,7 @@
                 <v-row id="main-body" >
                     <SideNav />
                     <v-col id="content" lg="9" md="9" sm="8" cols="12">
-                        <Banner /> 
+                        
                         <router-view></router-view>
                     </v-col>
                 </v-row>
@@ -61,7 +61,6 @@
 <script>
 
 import SideNav from './components/SideNav'
-import Banner from './components/Banner.vue'
 import Footer from './components/Footer.vue'
 import BottomBanner from './components/BottomBanner.vue'
 
@@ -71,7 +70,6 @@ export default {
   name: 'App',
   components: {
     SideNav,
-    Banner,
     Footer,
     BottomBanner
   
@@ -117,7 +115,8 @@ export default {
 }
 #top-nav{
   border: 2px solid black;
-  height: 78px
+  height: 78px;
+  border-left: 0;
 }
 #dark-mode-btn{
   border-right: 2px solid black;
@@ -126,6 +125,7 @@ export default {
   align-items: center;
   display: flex;
   font-size: 27px;
+
 }
 #main-body{
   height: auto;
