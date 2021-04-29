@@ -32,6 +32,7 @@
                         <router-view></router-view>
                     </v-col>
                 </v-row>
+                <BottomBanner />
                 <Footer />
 
 
@@ -62,6 +63,7 @@
 import SideNav from './components/SideNav'
 import Banner from './components/Banner.vue'
 import Footer from './components/Footer.vue'
+import BottomBanner from './components/BottomBanner.vue'
 
 
 export default {
@@ -70,7 +72,8 @@ export default {
   components: {
     SideNav,
     Banner,
-    Footer
+    Footer,
+    BottomBanner
   
     
     

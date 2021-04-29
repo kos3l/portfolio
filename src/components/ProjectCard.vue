@@ -39,7 +39,7 @@ export default {
 .project {
 
     display: flex;
-    width: 37vw;
+    width: 37.5vw;
     margin-right: 0;
     margin-bottom: 0;
     justify-content: center;
@@ -80,17 +80,34 @@ export default {
 .image:hover {
     filter: grayscale(0%);
 }
-@media screen and (max-width:1400px) {
-    .project{
-        width: 67vw;
-    }
-}
+
 @media screen and (max-width:1000px) {
     .project{
-        width: 56vw;
-        height: 64vh;
+        width: 100vw;
+        height: 30vh;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
     }
+    .project-inner{
+        width: 100%;
+        height: 25vh;
+        border: 0;
+        
+    }
+    .project-image-wrap{
+    height: 25vh;
+    }   
     
+    .image{
+        height: 25vh;
+    }
+     .project-text-wrap{
+        
+        padding-top: 1vh;
+        font-size: 20px;
+
+     }
+
 }
 @media screen and (max-width:600px) {
     .project{

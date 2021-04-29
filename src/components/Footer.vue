@@ -29,8 +29,7 @@ export default {
     height: 12vh;
     background-color: black;
     flex-direction: row;
-    bottom: 0;
-    position: absolute;
+    
     
 
 }
