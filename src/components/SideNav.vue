@@ -30,6 +30,7 @@
 
 export default {
   name: 'SideNav',
+  
 
 }
 </script>

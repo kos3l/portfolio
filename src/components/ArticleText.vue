@@ -38,7 +38,7 @@ export default {
 #article p{
     font-weight: 300;
     letter-spacing: 0.1rem;
-    font-size: 1.2rem;
+    font-size: 1vw;
 
 }
 </style>

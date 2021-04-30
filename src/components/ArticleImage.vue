@@ -12,7 +12,7 @@
 <script>
 export default {
     name: 'ArticleImage',
-    props:['photo']
+    props:['photo', 'id']
 
 }
 </script>

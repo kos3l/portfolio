@@ -8,7 +8,7 @@
 
         <v-col lg="8" id="middle">
           <Banner />
-          <ArticleImage v-for="photo in photos" :key="photo.title" :photo="photo"/>
+          <ArticleImage v-for="photo in photos" :photo="photo" :key="photo.src" />
           <ArticleText  v-for="text in texts" :key="text.id" :text="text"/>
           
         </v-col>
@@ -39,27 +39,27 @@ export default {
         { 
           title: "THAT'S ME RIGHT THERE",
           src: require('/src/assets/janakrzesle.jpg'),
-          id: 1
+
         },
         { 
           title: 'COMMISSION',
           src: require('/src/assets/commissions.jpg'),
-          id: 2
+
         },
         { 
           title: 'MY STOP MOTION CLASSES',
           src: require('/src/assets/tinder.png'),
-          id: 3
+
         },
         { 
           title: 'MY FAVOURITE ARTISTS',
           src: require('/src/assets/ilustrejszynFinished.png'),
-          id: 4
+
         },
         { 
           title: 'MY FAVOURITE PAINTINGS',
           src: require('/src/assets/ilustrejszynFinished.png'),
-          id: 5
+
         },
       ],
       texts: [
