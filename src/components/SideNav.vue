@@ -2,15 +2,12 @@
   <v-col id="side-nav" lg="3" md="3" sm="4" cols="12" >
               <v-col id="profile" lg="12" md="12" sm="12">
 
-                    <router-link :to="{ name: 'Home'}" id="parent">
+                    
+                      <div id="parent">
                       <v-img
-                        :src="require('../assets/portpic1.jpg')"
-                        
-                      />
-                    </router-link>
+                        :src="require('../assets/portpic1.jpg')" /></div>
                     <span id="mds-mobile" >
                         >KAROLINA KOSINSKA
-                        
                         >MULTIMEDIA DESIGN STUDENT
                         
                     </span>

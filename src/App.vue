@@ -6,7 +6,9 @@
                 <v-row id="top-nav" >
                     <v-col id="dark-mode-btn" lg="3" md="3" sm="0">
                         <div id="links-abt">
+                          <router-link :to="{ name: 'Home'}" id="links-abt">
                           >KAROLINA KOSINSKA
+                          </router-link>
                         </div>
                     </v-col>
                     <v-col id="nav" lg="9" md="9" sm="12" cols="12">
@@ -104,6 +106,7 @@ export default {
   letter-spacing: 0.1rem;
   font-size: 1.5vw;
   color: black;
+  text-decoration: none;
 }
 #nav{
   padding: 0px 40px 0px 40px;
