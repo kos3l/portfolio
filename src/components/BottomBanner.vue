@@ -123,6 +123,7 @@ export default {
     height: 4vh;
     width: 100vw;
     background-color: white;
+    border-top: 2px solid black;
 
 }
 #inner-banner{

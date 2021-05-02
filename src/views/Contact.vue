@@ -8,6 +8,9 @@
 
             <v-col lg="8" id="middle-c">
                 <Banner />
+                <div id="headline">
+                    <p> <i>Feel free to contact me on my social media too!</i></p>
+                </div>
 
 
                 <div id="text-wrapper">
@@ -16,18 +19,14 @@
 
                     </div>
                     <div id="details">
-                        <p> MY DETAILS:</p>
-                        <p></p>
+                        <p> CONTACT DETAILS:</p>
                     </div>
                 </div>
                 <div id="wrapper1">
-                    <div id="input-card">
+                    <ContactCard />
+                    <InfoCard />
                         
-
-                    </div>
-                    <div id="info-card">
-                        
-                    </div>
+                    
 
                 </div>
 
@@ -43,12 +42,16 @@
 
 <script>
 import Banner from '/src/components/Banner'
+import ContactCard from '/src/components/ContactCard'
+import InfoCard from '/src/components/InfoCard'
 export default {
-     name: 'Contact',
-  components: {
-      Banner
+    name: 'Contact',
+    components: {
+            Banner,
+            ContactCard,
+            InfoCard
 
-  }
+    }
 
 }
 </script>
@@ -57,19 +60,20 @@ export default {
 
 #wrapper1{
     width: 43vw;
-    height: 37vh;
+    height: 40%;
     margin: 0vw 3vw 3vw 3vw;
     display: flex;
     justify-content: space-between;
 
+
 }
 #bg-c{
   width: 100%;
-  height: 75vh;
+  height: auto;
   background-color: grey;
 }
 #main-row-c {
-  height: 100%;
+  height: auto;
   width: 100%;
   margin: 0;
 }
@@ -79,40 +83,51 @@ export default {
   padding: 0;
   border: 2px solid black;
   border-top: 0;
-
+  border-bottom: 0;
+  
 }
 #input-card{
     width: 46%;
-    background-color: grey;
+    background-color: #97EAD2;
     border: 2px solid black;
     height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 
 }
-#info-card{
-    width: 46%;
-    background-color: grey;
-    border: 2px solid black;
-    height: 100%;
 
+#headline {
+    letter-spacing: 0.1vw;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    height: 17vh;
 }
 #text-wrapper{
     margin: 0;
     width: 100%;
-    height: 100px;
+    height: 5vh;
     display: flex;
-
     align-items: flex-end;
     font-weight: 900;
+    letter-spacing: 0.1vw;
+    justify-content: space-around;
+    font-size: 1.5vw;
+    padding-right: 1.4vw;
 }
 
-#write{
-    margin-left: 3vw;
-
+#card-button{
+    width: 100%;
+    min-height: 8vh;
+    background-color: white;
+    border-top: 2px solid black;
+    font-weight:300;
+    font-size: 2vw;
+    
 }
 
-#details{
-    margin-left: 15vw;
-
-}
 
 </style>
