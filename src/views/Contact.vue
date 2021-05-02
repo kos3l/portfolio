@@ -7,7 +7,7 @@
             </v-col>
 
             <v-col lg="8" id="middle-c">
-                <Banner />
+                <Banner one="H" two="E" three="L" four="L" five="O"/>
                 <div id="headline">
                     <p> <i>Feel free to contact me on my social media too!</i></p>
                 </div>
@@ -105,6 +105,7 @@ export default {
     justify-content: center;
     font-size: 1.5vw;
     height: 17vh;
+    border-top: 2px solid black;
 }
 #text-wrapper{
     margin: 0;

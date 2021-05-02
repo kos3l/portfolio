@@ -7,7 +7,7 @@
         </v-col>
 
         <v-col lg="8" id="middle">
-          <Banner />
+          <Banner one="K" two="O" three="S" four="3" five="E" six="L"/>
           <ArticleImage v-for="photo in photos" :photo="photo" :key="photo.src" />
           <ArticleText  v-for="text in texts" :key="text.id" :text="text"/>
           
@@ -110,5 +110,6 @@ export default {
   border-top: 0;
 
 }
+
 
 </style>

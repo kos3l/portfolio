@@ -43,6 +43,7 @@ export default {
     margin-right: 0;
     margin-bottom: 0;
     justify-content: center;
+    border-top: 2px solid black;
  
 }
 .project-text-wrap{
@@ -56,7 +57,6 @@ export default {
 }
 .project-inner{
     border-right: 2px solid black;
-    border-bottom: 2px solid black;
     width: 100%;
     height: 65vh;
     background-color: white;
@@ -73,6 +73,7 @@ export default {
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    object-fit: cover;
     
 
 }

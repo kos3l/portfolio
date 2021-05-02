@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-            <Banner /> 
+            <Banner one="P" two="R"  three="O" four="J" five="E" six="C" seven="T" eight="S"/> 
             <ProjectCard v-for="project in projects" :key="project.title" :project="project" />
             <router-view></router-view>
 

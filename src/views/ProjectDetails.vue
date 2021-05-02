@@ -7,20 +7,23 @@
         </v-col>
 
         <v-col lg="8" id="middle-projects">
-          <Banner />
           <div v-if="id==1">
+          <Banner one="F" two="L"  three="Y" four="E" five="R"/>
             <FanoText v-for="fano in fanos" :fano="fano" :key="fano.nr"/>
           </div>
 
           <div v-if="id==2">
+            <Banner one="A" two="R"  three="T"/>
             <DesignText description="Here is a collection of my best works I have made throughout the years. Majority was done in Adobe Photoshop and some in Illustrator."/>
           </div>
 
           <div v-if="id==3">
+            <Banner one="G" two="A"  three="M" four="E"/>
             <TinderText v-for="tinderbox in tinderboxes" :tinderbox="tinderbox" :key="tinderbox.nr"/>
           </div>
 
           <div v-if="id==4">
+            <Banner one="W" two="E"  three="B"/>
             <DuText v-for="downunder in downunders" :downunder="downunder" :key="downunder.nr"/>
           </div>
         </v-col>
@@ -120,4 +123,5 @@ export default {
   border-top: 0;
 
 }
+
 </style>

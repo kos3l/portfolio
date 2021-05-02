@@ -100,6 +100,7 @@ export default {
   letter-spacing: 0.1rem;
   font-size: 1.5vw;
   color: black;
+  z-index: 10;
 }
 #links-abt{
   font-weight: 500;
