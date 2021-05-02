@@ -62,9 +62,9 @@
 
 <script>
 
-import SideNav from './components/SideNav'
-import Footer from './components/Footer.vue'
-import BottomBanner from './components/BottomBanner.vue'
+import SideNav from './components/layout/SideNav'
+import Footer from './components/layout/Footer.vue'
+import BottomBanner from './components/layout/BottomBanner.vue'
 
 
 export default {

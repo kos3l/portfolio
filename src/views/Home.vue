@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import ProjectCard from "/Users/karolinakosinska/Desktop/portfolio/src/components/ProjectCard"
-import Banner from '/src/components/Banner'
+import ProjectCard from "/Users/karolinakosinska/Desktop/portfolio/src/components/layout/ProjectCard"
+import Banner from '/src/components/layout/Banner'
 export default {
   name: 'Home',
   components: {

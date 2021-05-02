@@ -34,11 +34,11 @@
 </template>
 
 <script>
-import Banner from '/src/components/Banner'
-import FanoText from '/src/components/FanoText'
-import DuText from '/src/components/DuText'
-import TinderText from '/src/components/TinderText'
-import DesignText from '/src/components/DesignText'
+import Banner from '/src/components/layout/Banner'
+import FanoText from '/src/components/projects/FanoText'
+import DuText from '/src/components/projects/DuText'
+import TinderText from '/src/components/projects/TinderText'
+import DesignText from '/src/components/projects/DesignText'
 export default {
   components: {
     Banner,

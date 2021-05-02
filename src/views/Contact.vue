@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import Banner from '/src/components/Banner'
+import Banner from '/src/components/layout/Banner'
 import ContactCard from '/src/components/ContactCard'
 import InfoCard from '/src/components/InfoCard'
 export default {

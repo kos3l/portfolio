@@ -5,7 +5,7 @@
                     
                       <div id="parent">
                       <v-img
-                        :src="require('../assets/portpic1.jpg')" /></div>
+                        :src="require('/src/assets/portpic1.jpg')" /></div>
                     <span id="mds-mobile" >
                         >KAROLINA KOSINSKA
                         >MULTIMEDIA DESIGN STUDENT

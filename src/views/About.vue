@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Banner from '/src/components/Banner'
+import Banner from '/src/components/layout/Banner'
 import ArticleImage from '/src/components/ArticleImage'
 import ArticleText from '/src/components/ArticleText'
 export default {
