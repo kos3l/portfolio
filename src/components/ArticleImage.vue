@@ -4,7 +4,7 @@
                 <img :src="photo.src" class="picture">
             </v-col>
             <v-col id="title">
-                <p>{{ photo.title }}</p>
+                <p>{{ photo.title}}</p>
             </v-col>
     </v-col>
 </template>
@@ -25,6 +25,7 @@ export default {
     padding: 0;
     border-top: 2px solid black;
     height: 40vh;
+    overflow: hidden;
 }
 #title{
     border-top: 2px solid black;
@@ -39,8 +40,10 @@ export default {
     margin: 0;
 }
 .picture{
-    
+    object-fit: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    
 }
 </style>

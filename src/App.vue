@@ -96,13 +96,13 @@ export default {
   
 }
 #links{
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0.1rem;
   font-size: 1.5vw;
   color: black;
 }
 #links-abt{
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.1rem;
   font-size: 1.5vw;
   color: black;
