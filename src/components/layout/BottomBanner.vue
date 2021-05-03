@@ -1,5 +1,5 @@
 <template>
-    <v-row id="outer-banner" class="d-none d-sm-flex">
+    <v-row id="outer-banner">
         <v-col id="inner-banner">
             <div id="move1" class="move">
                 PROXIMITY

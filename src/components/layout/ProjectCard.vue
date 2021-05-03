@@ -73,7 +73,8 @@ export default {
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    object-fit: cover;
+    object-fit: none;
+    object-position: 20% 50%;
     
 
 }
