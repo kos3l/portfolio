@@ -46,7 +46,7 @@ export default {
 #some{
     text-decoration: none;
     color: white;
-    font-size:24px;
+    font-size:1.5vw;
     font-weight: 900;
 }
 #second-inner-footer{
@@ -60,7 +60,7 @@ export default {
 }
 #some-fun{
     color: white;
-    font-size:24px;
+    font-size:1.5vw;
     font-weight: 900;
     margin-bottom: 0;
 }

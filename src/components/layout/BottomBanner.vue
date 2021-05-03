@@ -1,5 +1,5 @@
 <template>
-    <v-row id="outer-banner">
+    <v-row id="outer-banner" class="d-none d-sm-flex">
         <v-col id="inner-banner">
             <div id="move1" class="move">
                 PROXIMITY
@@ -139,9 +139,6 @@ export default {
     font-size: 1.5vw;
     overflow: hidden;
 }
-
-
-
 
 
 </style>
