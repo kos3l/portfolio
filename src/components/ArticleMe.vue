@@ -83,4 +83,21 @@ export default {
     font-size: 1vw;
 
 }
+
+@media screen and (max-width:1263px) {
+    #article h1{
+        font-size: 3vh;
+    }
+    #article p{
+        font-size: 1.5vh;
+    }
+
+}
+@media screen and (max-width:600px) {
+    #article {
+        padding: 10vw;
+        border-left: 2px solid black;
+    }
+
+}
 </style>

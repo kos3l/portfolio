@@ -3,16 +3,16 @@
     <div id="bg">
       <v-row id="main-row">
         
-        <v-col lg="2">
+        <v-col lg="2" md="1" sm="0" id="column" >
         </v-col>
 
-        <v-col lg="8" id="middle">
+        <v-col lg="8" md="10" sm="12" id="middle">
           <Banner one="K" two="O" three="S" four="3" five="E" six="L"/>
           <ArticleMe v-for="article in articles" :article="article" :key="article.id" />
           
         </v-col>
 
-        <v-col lg="2">
+        <v-col lg="2" md="1" sm="0" id="column" >
         </v-col>
       </v-row>
     </div>
@@ -88,6 +88,22 @@ export default {
   border: 2px solid black;
   border-bottom: 0;
   border-top: 0;
+
+}
+@media screen and (max-width:900px) {
+  #column{
+    display: none;
+  }
+  #middle{
+
+  border-left: 0;
+}
+
+}
+@media screen and (max-width:600px) {
+  #column{
+    display: none;
+  }
 
 }
 

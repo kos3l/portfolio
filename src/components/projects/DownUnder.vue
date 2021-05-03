@@ -1,6 +1,6 @@
 <template>
         <div id="slides-container">
-            <v-col id="article">
+            <v-col id="article-d">
                     <div id="wrapper">
                         <p>{{ downunder.description }}</p>
                     </div>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style>
-#article{
+#article-d{
     padding: 6vw;
     display: flex;
     align-items: center;
@@ -38,15 +38,32 @@ export default {
     background-color: white;
 }
 
-#article h1{
+#article-d h1{
     font-weight: 900;
     color: #C4C4C4;
     padding-bottom: 2vh;
 }
-#article p{
+#article-d p{
     font-weight: 300;
     letter-spacing: 0.1rem;
     font-size: 1vw;
 
+}
+@media screen and (max-width:600px) {
+    #article-d p{
+    font-size: 3.7vw;
+
+    }
+    #article-d{
+        padding: 10vw;
+        border-left: 2px solid black;
+
+    }
+    #display{
+        border-left: 2px solid black;
+    }
+    #title{
+        font-size: 6vw;
+    }
 }
 </style>

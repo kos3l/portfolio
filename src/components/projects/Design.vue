@@ -35,4 +35,12 @@ export default {
     border: 2px solid black;
     
 }
+@media screen and (max-width:600px) {
+    #image-wrap-design{
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        height: auto;
+        overflow: hidden;
+    }
+}
 </style>

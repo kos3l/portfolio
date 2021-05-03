@@ -5,11 +5,12 @@
                     
                       <div id="parent">
                       <v-img
-                        :src="require('/src/assets/portpic1.jpg')" /></div>
+                        :src="require('/src/assets/portpic1.jpg')" /> </div>
                     <span id="mds-mobile" >
+                      <router-link :to="{ name: 'Home'}" id="link-mobile" > 
                         >KAROLINA KOSINSKA
                         >MULTIMEDIA DESIGN STUDENT
-                        
+                      </router-link>
                     </span>
                     
 
@@ -118,6 +119,12 @@ background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 70
       font-weight: 300;
       margin-left: 30px;
       display: block;
+      text-decoration: none;
+      color: black;
+    }
+    #link-mobile{
+      text-decoration: none;
+      color: black;
     }
 }
 </style>

@@ -3,10 +3,10 @@
     <div id="bg-projects">
       <v-row id="main-row-projects">
         
-        <v-col lg="2">
+        <v-col lg="2" md="1" sm="0" id="column">
         </v-col>
 
-        <v-col lg="8" id="middle-projects">
+        <v-col lg="8" md="10" sm="12" id="middle-projects">
           <div v-if="id==1">
           <Banner one="F" two="L"  three="Y" four="E" five="R"/>
             <Fano v-for="fano in fanos" :key="fano.nr" :fano="fano"/>
@@ -32,7 +32,7 @@
           </div>
         </v-col>
 
-        <v-col lg="2">
+        <v-col lg="2" md="1" sm="0" id="column">
         </v-col>
       </v-row>
     </div>
@@ -172,7 +172,7 @@ export default {
   border-top: 2px solid black;
   font-weight: 300;
   letter-spacing: 0.1rem;
-  font-size: 1vw;
+  font-size: 1.5vw;
   padding: 3vw;
   display: flex;
 }
@@ -202,5 +202,36 @@ export default {
   border-top: 0;
 
 }
+@media screen and (max-width:1263px) {
+    #first-card{
 
+    height: 35vh;
+
+  }
+}
+@media screen and (max-width:960px) {
+  #column{
+    display: none;
+  }
+  #middle-projects{
+  border-left: 0;
+}
+  #first-card{
+    font-size: 2.5vw;
+
+
+  }
+
+}
+@media screen and (max-width:600px) {
+  #column{
+    display: none;
+  }
+  #first-card{
+    border-left:2px solid black;
+    font-size: 4vw;
+    padding: 10vw;
+  }
+
+}
 </style>

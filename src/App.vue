@@ -4,14 +4,14 @@
           <v-container id="skeleton" fluid>
 
                 <v-row id="top-nav" >
-                    <v-col id="dark-mode-btn" lg="3" md="3" sm="0">
+                    <v-col id="dark-mode-btn" lg="3" md="3" sm="4">
                         <div id="links-abt">
                           <router-link :to="{ name: 'Home'}" id="links-abt">
                           >KAROLINA KOSINSKA
                           </router-link>
                         </div>
                     </v-col>
-                    <v-col id="nav" lg="9" md="9" sm="12" cols="12">
+                    <v-col id="nav" lg="9" md="9" sm="8" cols="12">
                                   <router-link :to="{ name: 'About'}" >
                                     <button>
                                     <v-icon left> mdi-checkbox-blank-circle-outline</v-icon>
@@ -139,20 +139,20 @@ export default {
 #bottom-nav{
   display: none;
 }
-@media screen and (max-width:1100px) {
-    #nav{
+
+@media screen and (max-width:1000px) {
+  #links{
+  font-size: 2vw;
+}
+  #nav{
   padding: 0px 40px 0px 40px;
   justify-content: space-between;
   align-items: center;
   display: flex;
-  font-size: 27px;
   
 }
-#dark-mode-btn{
-  display: none
-}
-}
 
+}
 @media screen and (max-width:600px) {
   #top-nav{
     display: none;

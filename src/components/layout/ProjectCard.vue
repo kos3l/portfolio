@@ -74,7 +74,7 @@ export default {
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
     object-fit: none;
-    object-position: 20% 50%;
+    object-position: 60% 50%;
     
 
 }
@@ -127,6 +127,9 @@ export default {
     
     .image{
         height: 25vh;
+        -webkit-filter: none;
+        filter: none;
+        object-position: 70% 40%;
     }
     #main-body{
 

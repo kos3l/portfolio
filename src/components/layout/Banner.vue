@@ -1,6 +1,6 @@
 <template>
     <v-col id="banner" lg="12" md="12" sm="12" class="d-none d-sm-flex" >
-        <p id="homepage"> 
+        <p id="homepage-1"> 
             <span>{{ one }}</span>
             <span>{{ two }}</span>
             <span>{{ three }}</span>
@@ -37,7 +37,7 @@ export default {
     width: 100%;
     
     }
-    #homepage{
+    #homepage-1{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,6 +67,11 @@ export default {
     #banner{
         height: 245px;
 
+    }}
+    @media screen and (max-width:900px) {
+
+    #homepage-1{
+        display: none;
     }
     }
 </style>

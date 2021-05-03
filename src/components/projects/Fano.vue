@@ -1,6 +1,6 @@
 <template>
         <div id="slides-container">
-            <v-col id="article">
+            <v-col id="article-f">
                     <div id="wrapper">
 
                         <p>{{ fano.description }}</p>
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style>
-#article{
+#article-f{
     padding: 6vw;
     display: flex;
     align-items: center;
@@ -39,15 +39,35 @@ export default {
     background-color: white;
 }
 
-#article h1{
+#article-f h1{
     font-weight: 900;
     color: #C4C4C4;
     padding-bottom: 2vh;
 }
-#article p{
+#article-f p{
     font-weight: 300;
     letter-spacing: 0.1rem;
     font-size: 1vw;
 
+}
+
+@media screen and (max-width:600px) {
+  #article-f p{
+
+    font-size: 4vw;
+
+}
+#article-f{
+
+    padding: 10vw;
+    border-left: 2px solid black;
+
+}
+#display{
+    border-left: 2px solid black;
+}
+#title{
+    font-size: 6vw;
+}
 }
 </style>

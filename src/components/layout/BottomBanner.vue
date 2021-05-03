@@ -139,6 +139,11 @@ export default {
     font-size: 1.5vw;
     overflow: hidden;
 }
+@media screen and (max-width:600px) {
+  #outer-banner{
+    display: none;
+}
 
+}
 
 </style>
