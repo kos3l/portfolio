@@ -57,7 +57,11 @@ export default {
     font-size: 3vw;
     padding-bottom: 2vh;
 }
-
+@media screen and (max-width:1264px) {
+    #article-d{
+        height: 50vh;
+    }
+}
 @media screen and (max-width:600px) {
     #article-d p{
     font-size: 3.7vw;

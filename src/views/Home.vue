@@ -55,5 +55,12 @@ export default {
   flex-direction: row;
   background-color: white;
 
+
 }
+@media screen and (max-width:600px) {
+  .home{
+    padding-bottom: 10vh;
+}
+}
+
 </style>

@@ -93,6 +93,9 @@ export default {
     #article p{
         font-size: 1.5vh;
     }
+    #article {
+        height: 50vh;
+    }
 
 }
 @media screen and (max-width:600px) {

@@ -1,6 +1,7 @@
 <template>
 
     <v-app>
+      
           <v-container id="skeleton" fluid>
 
                 <v-row id="top-nav" >
@@ -31,7 +32,11 @@
                     <SideNav />
                     <v-col id="content" lg="9" md="9" sm="8" cols="12">
                         
-                        <router-view></router-view>
+                        <transition name="view">
+                          <router-view/>
+                        </transition>
+                        
+                        
                     </v-col>
                 </v-row>
                 <BottomBanner />
@@ -57,6 +62,7 @@
             </v-row>
             
           </v-container>
+          
       </v-app>
 </template>
 
@@ -78,6 +84,12 @@ export default {
     
     
   },
+  data() {
+    return {
+      
+    };
+  },
+  
 
 
 };
@@ -90,6 +102,31 @@ export default {
   color: black;
   
 }
+
+.view-enter-active, .view-leave-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+  border-left: 2px solid black;
+}
+.view-enter-active {
+  transition-delay: 0.5s;
+}
+.view-enter {
+  opacity: 0;
+  transform: translateX(50px)
+}
+.view-enter-to {
+  opacity: 1;
+  transform: translateX(0px)
+}
+.view-leave {
+  opacity: 1;
+  transform: translateX(0px)
+}
+.view-leave-to {
+  opacity: 0;
+  transform: translateX(50px)
+}
+
 
 #content{
   padding: 0;
@@ -154,18 +191,24 @@ export default {
 
 }
 @media screen and (max-width:600px) {
+  .view-enter-active, .view-leave-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+  border: 0;
+}
   #top-nav{
     display: none;
      
   }
-  #links-mobile{
-  font-size: 25px;
-}
-#dark-mode-btn{
-  display: none
-}
- 
- #bottom-nav {
+    #links-mobile{
+    font-size: 2.5vh;
+    height: 100%;
+  }
+  #dark-mode-btn{
+    display: none
+  }
+
+  #bottom-nav {
+    margin-bottom: 0;
     z-index: 44444;
     position: fixed;
     bottom: 0;
@@ -173,7 +216,9 @@ export default {
     height: 10vh;
     background-color: white;
     border: 2px solid black;
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   
     
  }
@@ -182,12 +227,11 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+    
   }
 
   #main-body{
     margin-top: 0;
-    height: 90vh;
     
   }
   #skeleton{
@@ -198,8 +242,8 @@ export default {
     }
     #content{
      
-    height: 60vh;
-    border-bottom: 2px solid black;
+    height: 30vh;
+
   }
 
 

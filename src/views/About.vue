@@ -90,6 +90,7 @@ export default {
   border-top: 0;
 
 }
+
 @media screen and (max-width:900px) {
   #column{
     display: none;

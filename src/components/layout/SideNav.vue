@@ -109,7 +109,7 @@ background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 70
         justify-content: right;
         padding-left: 45px;
         flex-direction: row;
-        border-bottom: 0;
+        transform: translateY(2px);
     }
     #parent{
       width: 30vw;
