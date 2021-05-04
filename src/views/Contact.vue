@@ -3,19 +3,19 @@
     <div id="bg-c">
         <v-row id="main-row-c">
             
-            <v-col lg="2">
+            <v-col lg="1" md="1" id="column">
             </v-col>
 
-            <v-col lg="8" id="middle-c">
+            <v-col lg="10" md="10" sm="12" id="middle-c">
                 <Banner one="H" two="E" three="L" four="L" five="O"/>
                 <div id="headline">
-                    <p> <i>Feel free to contact me on my social media too!</i></p>
+                    <p> <i>Feel free to get in touch with me on my social media too!</i></p>
                 </div>
 
 
                 <div id="text-wrapper">
                     <div id="write">
-                        <p>WRITE ME HERE:</p>
+                        <p>DIRECT CONTACT:</p>
 
                     </div>
                     <div id="details">
@@ -32,7 +32,7 @@
 
             </v-col>
 
-            <v-col lg="2">
+            <v-col lg="1" md="1" id="column">
             </v-col>
         </v-row>
     </div>
@@ -59,9 +59,9 @@ export default {
 <style>
 
 #wrapper1{
-    width: 43vw;
+    width: 55vw;
     height: 40%;
-    margin: 0vw 3vw 3vw 3vw;
+    margin: 1vh 0vw 2vw 3.5vw;
     display: flex;
     justify-content: space-between;
 
@@ -86,16 +86,7 @@ export default {
   border-bottom: 0;
   
 }
-#input-card{
-    width: 46%;
-    background-color: #97EAD2;
-    border: 2px solid black;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
 
-}
 
 #headline {
     letter-spacing: 0.1vw;
@@ -130,5 +121,41 @@ export default {
     
 }
 
+@media screen and (max-width:1264px) {
+    #wrapper1{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        
+    }
+    #text-wrapper{
+        display: none;
+    }
+}
+@media screen and (max-width:958px) {
 
+    #middle-c{
+    border-left: none;
+    }
+    #headline{
+        font-size: 2vw;
+    }
+    #card-button{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:600px) {
+
+    #middle-c{
+    border-left: 2px solid black;
+    }
+    #headline{
+        padding: 2vh 2vw 0vh 2vw;
+        font-size: 7vw;
+        text-align: center;
+    }
+    #card-button{
+        font-size: 6vw;
+    }
+}
 </style>

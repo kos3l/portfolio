@@ -26,7 +26,7 @@ export default {
 
 <style>
 #info-card{
-    width: 46%;
+    width: 60%;
     height: 16vw;
     background-color: #97EAD2;
     border: 2px solid black;
@@ -38,12 +38,12 @@ export default {
 }
 #detail-content{
     width: 100%;
-    height: 16vw;
+    height: 27vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 8vh 2vw 2vh 2vw;
+    padding: 2vh 2vw 2vh 2vw;
 }
 #titles {
     font-size: 1.6vw;
@@ -62,5 +62,63 @@ export default {
     margin-bottom: 3vh;
     font-weight: 400;
     text-shadow: 3px 3px 3px #45CB9D;
+}
+
+@media screen and (max-width:1264px) {
+    #info-card{
+    width: 100%;
+    height: 30vh;
+    border: none;
+    border-top: 2px solid black;
+    
+
+    }
+    #detail-content{
+        height: 30vh;
+        align-items: center;
+        padding: 2vh 2vw 0vh 2vw;
+        
+
+    }
+    #titles {
+        font-size: 2.5vw;
+        
+    }
+
+    #my-info{
+        font-size: 2vw;
+
+    }
+}
+@media screen and (max-width:900px) {
+
+    #middle-c{
+    border-left: none;
+    }
+    #titles {
+        font-size: 3.5vw;
+        
+    }
+
+    #my-info{
+        font-size: 3vw;
+
+    }
+    
+}
+@media screen and (max-width:600px) {
+
+    #titles {
+        font-size: 3vh;
+        
+    }
+
+    #my-info{
+        font-size: 2vh;
+
+    }
+    #detail-content{
+        padding: 2.5vh 0vw 0vh 0vw;
+    }
 }
 </style>

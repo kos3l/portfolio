@@ -2,6 +2,7 @@
         <div id="slides-container">
             <v-col id="article-d">
                     <div id="wrapper">
+                        <h1 id="name">{{ downunder.title }}</h1>
                         <p>{{ downunder.description }}</p>
                     </div>
                     
@@ -33,7 +34,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     border-top: 2px solid black;
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     background-color: white;
 }
@@ -46,9 +47,17 @@ export default {
 #article-d p{
     font-weight: 300;
     letter-spacing: 0.1rem;
-    font-size: 1vw;
+    font-size: 1.5vw;
 
 }
+#name{
+
+    font-weight: 900;
+    color: #C4C4C4;
+    font-size: 3vw;
+    padding-bottom: 2vh;
+}
+
 @media screen and (max-width:600px) {
     #article-d p{
     font-size: 3.7vw;

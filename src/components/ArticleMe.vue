@@ -2,7 +2,7 @@
         <div id="slides-container">
             <v-col id="article">
                     <div id="wrapper">
-                        <h1>{{ article.head }}</h1>
+                        <h1 id="name">{{ article.head }}</h1>
                         <p>{{ article.body }}</p>
                     </div>
                     
@@ -30,14 +30,16 @@ export default {
 #slides-container{
     width: 100%;
     height: auto;
+
 }
 #display{
     padding: 0;
+
 }
 #image-wrap{
     padding: 0;
     border-top: 2px solid black;
-    height: 45vh;
+    height: 60vh;
     overflow: hidden;
 }
 #title{
@@ -67,7 +69,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     border-top: 2px solid black;
-    height: 55vh;
+    height: 70vh;
     width: 100%;
     background-color: white;
 }
@@ -75,12 +77,12 @@ export default {
 #article h1{
     font-weight: 900;
     color: #C4C4C4;
-    padding-bottom: 2vh;
+    padding-bottom: 3vh;
 }
 #article p{
     font-weight: 300;
     letter-spacing: 0.1rem;
-    font-size: 1vw;
+    font-size: 1.5vw;
 
 }
 

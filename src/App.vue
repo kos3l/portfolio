@@ -110,7 +110,7 @@ export default {
   text-decoration: none;
 }
 #nav{
-  padding: 0px 40px 0px 40px;
+  padding: 0px 6.5vw 0px 6.5vw;
   justify-content: space-between;
   align-items: center;
   display: flex;

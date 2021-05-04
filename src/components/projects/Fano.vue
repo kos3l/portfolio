@@ -2,7 +2,7 @@
         <div id="slides-container">
             <v-col id="article-f">
                     <div id="wrapper">
-
+                        <h1 id="name">{{ fano.title }}</h1>
                         <p>{{ fano.description }}</p>
                     </div>
                     
@@ -34,21 +34,23 @@ export default {
     justify-content: center;
     flex-direction: column;
     border-top: 2px solid black;
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     background-color: white;
 }
 
-#article-f h1{
-    font-weight: 900;
-    color: #C4C4C4;
-    padding-bottom: 2vh;
-}
 #article-f p{
     font-weight: 300;
     letter-spacing: 0.1rem;
-    font-size: 1vw;
+    font-size: 2vw;
 
+}
+#name{
+
+    font-weight: 900;
+    color: #C4C4C4;
+    font-size: 3vw;
+    padding-bottom: 2vh;
 }
 
 @media screen and (max-width:600px) {

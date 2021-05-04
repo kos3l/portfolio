@@ -2,6 +2,7 @@
         <div id="slides-container">
             <v-col id="article-t">
                     <div id="wrapper">
+                        <h1 id="name">{{ tinderbox.title }}</h1>
                         <p>{{ tinderbox.description }}</p>
                     </div>
                     
@@ -33,7 +34,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     border-top: 2px solid black;
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     background-color: white;
 }
@@ -46,8 +47,18 @@ export default {
 #article-t p{
     font-weight: 300;
     letter-spacing: 0.1rem;
-    font-size: 1vw;
+    font-size: 1.5vw;
 
+}
+#image-wrap{
+    height: 60vh;
+}
+#name{
+
+    font-weight: 900;
+    color: #C4C4C4;
+    font-size: 3vw;
+    padding-bottom: 2vh;
 }
 @media screen and (max-width:600px) {
   #article-t p{
