@@ -2,6 +2,7 @@
   <div class="home">
             <Banner one="P" two="R"  three="O" four="J" five="E" six="C" seven="T" eight="S"/> 
             <ProjectCard v-for="project in projects" :key="project.title" :project="project" />
+            <MobileProjects class=""/>
             <router-view></router-view>
 
   </div>
@@ -11,11 +12,13 @@
 <script>
 import ProjectCard from "/Users/karolinakosinska/Desktop/portfolio/src/components/layout/ProjectCard"
 import Banner from '/src/components/layout/Banner'
+import MobileProjects from '/src/components/layout/MobileProjects'
 export default {
   name: 'Home',
   components: {
     ProjectCard,
-    Banner
+    Banner,
+    MobileProjects
   }, 
   data() {
     return {
