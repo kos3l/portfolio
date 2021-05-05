@@ -14,15 +14,15 @@
                     </v-col>
                     <v-col id="nav" lg="9" md="9" sm="8" cols="12">
                                   <router-link :to="{ name: 'About'}" >
-                                    <button>
-                                    <v-icon left> mdi-checkbox-blank-circle-outline</v-icon>
+                                    <button id="nav-button">
+                                    <v-img id="icon-left" :src="require('/src/assets/circle.svg')"></v-img>
                                     <span id="links"> ABOUT ME </span>
                                     </button>
                                   </router-link>
                                   <router-link :to="{ name: 'Contact'}" >
-                                    <button>
+                                    <button id="nav-button">
                                     <span id="links"> CONTACT </span>
-                                    <v-icon right>mdi-checkbox-blank-circle-outline</v-icon>
+                                    <v-img id="icon-right" :src="require('/src/assets/circle.svg')"></v-img>
                                     </button>
                                   </router-link>
                     </v-col>
@@ -53,7 +53,7 @@
                                     <span id="links-mobile"> ABOUT ME </span>
                                     </button>
                                   </router-link>
-                                  <v-icon left> mdi-checkbox-blank-circle-outline</v-icon>
+                                  <v-img id="icon-mobile" :src="require('/src/assets/circle.svg')"></v-img>
                                   <router-link :to="{ name: 'Contact'}" >
                                     <button>
                                     <span id="links-mobile"> CONTACT </span>
@@ -102,6 +102,19 @@ export default {
   text-decoration: none;
   color: black;
   
+}
+
+#icon-left{
+  width: 1.5vw;
+  margin-right: 1vw;
+}
+#icon-right{
+  width: 1.5vw;
+  margin-left: 1vw;
+}
+#nav-button{
+  display: flex;
+  align-items: center;
 }
 
 .view-enter-active, .view-leave-active {
@@ -246,6 +259,10 @@ export default {
     height: 30vh;
 
   }
+  #icon-mobile{
+      max-width: 30px;
+      height: 30px;
+    }
 
 
 }

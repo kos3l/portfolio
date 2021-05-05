@@ -21,7 +21,7 @@
           <div v-if="id==2">
             <Banner one="A" two="R"  three="T"/>
             <v-col id="first-card">
-              <p> This is a collection of my works I have done throughout the years. Most of them were done in Photoshop and some in Illustrator. Two of them were a study I did based on a picture, I will source the original creator at the bottom of the page.
+              <p> This is a collection of my works I have done throughout the years. Most of them were done in Photoshop and some in Illustrator. Two of them were a study I did based on a picture. My favourite subject to draw are people, however I know the basics of perspective and environment design.
               </p>
             </v-col>
             <Design v-for="design in designs" :key="design.nr" :design="design"/>
@@ -148,7 +148,7 @@ export default {
           title: "THE DESIGN",
           description: "I have designed the characters, the mini game and did the last background with the dog in the cave, beside being a big part of creating the initial concept. Characters I have designed were meant to stay true to the tale but also look similar to the costumes 7-kanten already prepared",
           nr:3,
-          src: require('/src/assets/baba-content.png')
+          src: require('/src/assets/characters.jpg')
         }
       ],
         designs: [
