@@ -15,6 +15,9 @@
                     </div>
                     
             </v-col>
+             <div id="top">
+              <TopButton />
+            </div>
         </v-col>
 
         <v-col lg="1" md="1" sm="0" id="column" >
@@ -28,12 +31,14 @@
 <script>
 import Banner from '/src/components/layout/Banner'
 import ArticleMe from '/src/components/ArticleMe'
+import TopButton from '/src/components/layout/TopButton'
 
 export default {
    name: 'About',
   components: {
     Banner,
     ArticleMe,
+    TopButton
   },
   data() {
         return {

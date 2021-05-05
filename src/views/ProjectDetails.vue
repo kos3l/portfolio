@@ -11,13 +11,10 @@
           <Banner one="F" two="L"  three="Y" four="E" five="R"/>
             <Fano v-for="fano in fanos" :key="fano.nr" :fano="fano"/>
           <div id="changeparam">
-
-            <button v-on:click="toTop" id="totop"> 
-              <router-link :to="{ params: { id: 2 }} " id="next">NEXT PROJECT</router-link>
+            <button id="totop" v-on:click="toTop"  > TO THE TOP</button> 
+            <button id="next" > 
+              <router-link :to="{ params: { id: 2 }} "><p>NEXT PROJECT</p></router-link>
             </button>
-
-            <button> <span id="next"> TO THE TOP </span></button> 
-
           </div>
           </div>
 
@@ -28,19 +25,34 @@
               </p>
             </v-col>
             <Design v-for="design in designs" :key="design.nr" :design="design"/>
-            <button id="changeparam"><router-link :to="{ params: { id: 3 }} " id="next">NEXT PROJECT</router-link></button> 
+            <div id="changeparam">
+            <button id="totop" v-on:click="toTop"  > TO THE TOP</button> 
+            <button id="next" > 
+              <router-link :to="{ params: { id: 3 }} "><p>NEXT PROJECT</p></router-link>
+            </button>
+          </div>
           </div>
 
           <div v-if="id==3">
             <Banner one="G" two="A"  three="M" four="E"/>
             <Tinderbox v-for="tinderbox in tinderboxes" :key="tinderbox.nr" :tinderbox="tinderbox"/>
-            <button id="changeparam"><router-link :to="{ params: { id: 4 }} " id="next">NEXT PROJECT</router-link></button> 
+            <div id="changeparam">
+            <button id="totop" v-on:click="toTop"  > TO THE TOP</button> 
+            <button id="next" > 
+              <router-link :to="{ params: { id: 4 }} "><p>NEXT PROJECT</p></router-link>
+            </button>
+          </div>
           </div>
 
           <div v-if="id==4">
             <Banner one="W" two="E"  three="B"/>
             <DownUnder v-for="downunder in downunders" :key="downunder.nr" :downunder="downunder"/>
-           <button id="changeparam"> <router-link :to="{ params: { id: 1 }} " id="next">NEXT PROJECT</router-link></button> 
+            <div id="changeparam">
+            <button id="totop" v-on:click="toTop"  > TO THE TOP</button> 
+            <button id="next" > 
+              <router-link :to="{ params: { id: 1 }} "><p>NEXT PROJECT</p></router-link>
+            </button>
+          </div> 
           </div>
 
         </v-col>
@@ -199,6 +211,8 @@ export default {
     border-top: 2px solid black;
     height: 10vh;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 #next{
 
@@ -206,6 +220,21 @@ export default {
     font-weight: 300;
     letter-spacing: 0.1rem;
     font-size: 2vw;
+    border-left: 2px solid black;
+    width: 50%;
+    
+
+}
+#next p{
+    margin: 0;
+}
+#totop{
+  width: 50%;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  font-size: 2vw;
+
 
 }
 #first-card{
