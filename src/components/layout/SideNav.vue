@@ -20,6 +20,20 @@
                 <div id="mds">
                   >MULTIMEDIA DESIGN STUDENT
                 </div>
+              
+              <div id="list" 
+                  data-aos="slide-right" 
+                  data-aos-delay="10"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out-cubic"
+                  >
+                  
+                <ul>
+                  <li v-for="work in works" :key="work.src" id="list-look">
+                    <a :href="work.src"> {{ work.name }} </a>
+                  </li>
+                </ul>
+              </div>
 
               </v-col>
               
@@ -31,9 +45,26 @@
 export default {
   name: 'SideNav',
 
-  components: {
-
-    },
+  components: {},
+  data() {
+    return {
+      works: [
+        {
+          name: '@DOWN_UNDWER WEBSITE',
+          src:'http://downunder.since.one/index.html'
+        },
+        {
+          name: '@TINDERBOX XD PROTOTYPE',
+          src:'https://xd.adobe.com/view/b417a7a7-0186-4ca2-b1cf-ec95bc96ac3f-e144/'
+        },
+        {
+          name: '@FANØ FLYER',
+          src: 'https://drive.google.com/file/d/1ci0IzsI_EWa0eNzthsxx4jcJjOlKrOmq/view?usp=sharing'
+        },
+      ]
+    }
+  }
+    
 
   
 
@@ -41,7 +72,30 @@ export default {
 </script>
 
 <style>
+#list{
+  width: 100%;
+  position: absolute;
+  bottom: 26vh;
+  right: -2vw;
 
+  padding-right: 80vw;
+}
+#list ul{
+  padding: 0;
+}
+#list-look{
+  list-style-type: none;
+  font-size: 2vw;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  padding-bottom: 4vh;
+  text-shadow: 3px 3px 3px #D39BE8;
+  
+}
+#list-look a{
+  text-decoration: none;
+  color: black;
+}
 
 #parent{
   width: 10vw;
@@ -131,6 +185,9 @@ export default {
     #link-mobile{
       text-decoration: none;
       color: black;
+    }
+    #list{
+      display: none;
     }
 }
 </style>
