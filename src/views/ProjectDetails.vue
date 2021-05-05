@@ -234,14 +234,40 @@ export default {
 #next p{
     margin: 0;
 }
+#next:hover{
+
+    background-color:black;
+    color: white;
+
+}
+#next:hover p{
+    margin: 0;
+    color: white;
+}
 #totop{
   width: 50%;
   color: black;
   font-weight: 300;
   letter-spacing: 0.1rem;
   font-size: 2vw;
+  padding: 0;
+}
 
+#totop p{
+    margin: 0;
+}
 
+#totop:hover{
+
+    background-color:black ;
+    color: white;
+    
+}
+#totop:hover p{
+
+    color: white;
+    
+    
 }
 #first-card{
   width: 100%;
@@ -309,6 +335,41 @@ export default {
     font-size: 4vw;
     padding: 10vw;
   }
+  #changeparam{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+    border-left: 2px solid black;
+    font-size: 3vh;
+}
+    #totop{
+      font-size: 2vh;
+    }
+    #next{
+      font-size: 2vh;
+    }
+    #totop:hover{
 
+        background-color:white ;
+        color: black;
+        
+    }
+    #totop:hover p{
+
+        color: black;
+      
+    }
+    #next:hover{
+
+    background-color:white;
+    color: black;
+
+}
+    #next:hover p{
+        margin: 0;
+        color: black;
+    }
 }
 </style>
