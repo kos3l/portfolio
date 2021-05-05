@@ -9,7 +9,8 @@
             </v-col>
             <v-col id="display">
                     <v-col id="image-wrap">
-                        <img :src="article.src" class="picture">
+                        <img :src="article.src" class="picture d-none d-sm-flex">
+                        <img :src="article.mobile" class="picture d-flex d-sm-none" >
                     </v-col>
                     <v-col id="title">
                         <p>{{ article.title}}</p>

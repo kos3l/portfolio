@@ -9,7 +9,8 @@
             </v-col>
             <v-col id="display">
                     <v-col id="image-wrap">
-                        <img :src="downunder.src" class="picture">
+                        <img :src="downunder.src" class="picture d-none d-sm-flex" >
+                        <img :src="downunder.mobile" class="picture d-flex d-sm-none" >
                     </v-col>
                     <v-col id="title">
                         <p> PREVIEW </p>
@@ -21,7 +22,7 @@
 <script>
 export default {
     name:'DownUnder',
-    props: ['downunder']
+    props: ['downunder'],
 
 }
 </script>
@@ -78,5 +79,6 @@ export default {
     #title{
         font-size: 6vw;
     }
+    
 }
 </style>

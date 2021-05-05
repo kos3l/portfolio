@@ -9,7 +9,8 @@
             </v-col>
             <v-col id="display">
                     <v-col id="image-wrap">
-                        <img :src="tinderbox.src" class="picture">
+                        <img :src="tinderbox.src" class="picture d-none d-sm-flex">
+                        <img :src="tinderbox.mobile" class="picture d-flex d-sm-none">
                     </v-col>
                     <v-col id="title">
                         <p> PREVIEW</p>

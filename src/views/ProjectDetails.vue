@@ -115,20 +115,23 @@ export default {
           title: "INTRODUCTION",
           description: "Here you can see my first semester exam project I did in a group of four people. It was done only with the use of html and css as at the time, our course haven’t introduced any front-end frameworks yet. It was also my first website which I have fully created from scratch with my team. The theme for the project was “the sea” and the purpose was to make an informational website. We chose a topic of deep sea creatures. ",
           nr:1,
-          src: require('/src/assets/landingpageexample.png')
+          src: require('/src/assets/landingpageexample.png'),
+          mobile: require('/src/assets/landingpageexample.png')
           
         },
         {
           title: "THE REASONING",
           description: "The topic - Deep sea creatures have the appeal that can draw people’s interest as they are scary and seem alienlike. Based on our research how horror games on YouTube and scary stories like “creepypasta” gained a lot of attention throughout the years on the internet, we came to conclusion it was the right choice. Another reason for it was, how easily we could tie it with environmental issues such as plastic pollution and to make this educational website’s purpose meaningful.  ",
           nr:2,
-          src: require('/src/assets/fishexample.png')
+          src: require('/src/assets/fishexample.png'),
+          mobile: require('/src/assets/fishexamplemobile.png')
         },
         {
           title: "PROCESS",
           description: "Our work began by brainstorming ideas, creating mirro mind maps, personas and surveys. After gathering enough data and inspiration I have created initial wireframes and mock ups. Through our design we wanted to created a dark and mysterious atmosphere. The navigation and layout was simple to put the most focus on the content. Our survey results, told us that majority of people see science information through videos on YouTube, hence each topic has at least one.",
           nr:3,
-          src: require('/src/assets/bodyexample.png')
+          src: require('/src/assets/bodyexample.png'),
+          mobile: require('/src/assets/bodyexamplemobile.png')
         }
       ],
       tinderboxes: [
@@ -136,19 +139,22 @@ export default {
           title: "INTRODUCTION",
           description: "During my second semester’s project week, we were appointed by 7-kantent, the biggest group of amateur actors group, which make plays since 70s to create a way to advertise their upcoming play called “Fyrtøjet”. It is a tale written by Christian Andersen. My group was assigned to create a game concept, which would spark interest of potential viewers and introduce them to the story. ",
           nr:1,
-          src: require('/src/assets/tinder.png')
+          src: require('/src/assets/tinder.png'),
+          mobile: require('/src/assets/tinder-mobile.png')
         },
         { 
           title: "PROCESS",
           description: "After researching 7-kanten, the tale and establishing target group we sought to find the right game genre and suiting mechanics. Our conclusion was to create a mix of a arcade game and a story novel. In order to progress in the story and to be able to choose story options you need to gain action points through a Tetris like mini game. This project had many limitations such as the budget hence we planned the game to cover only the beginning of the story up until a cliffhanger moment.",
           nr:2,
-          src: require('/src/assets/pies.png')
+          src: require('/src/assets/pies.png'),
+          mobile: require('/src/assets/pies.png')
         },
         {
           title: "THE DESIGN",
           description: "I have designed the characters, the mini game and did the last background with the dog in the cave, beside being a big part of creating the initial concept. Characters I have designed were meant to stay true to the tale but also look similar to the costumes 7-kanten already prepared",
           nr:3,
-          src: require('/src/assets/characters.jpg')
+          src: require('/src/assets/characters.jpg'),
+          mobile: require('/src/assets/characters.jpg')
         }
       ],
         designs: [
