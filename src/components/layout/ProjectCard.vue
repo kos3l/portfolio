@@ -1,7 +1,7 @@
 <template>
 
     <div class="project">
-        <router-link :to="{ name: 'ProjectDetails', params: { id: project.id}}"> 
+        <router-link :to="{ name: 'ProjectDetails', params: { id: project.id }}"> 
         <div class="project-inner">
             <div class="project-image-wrap">
                 <img :src="project.src" class="image">
@@ -34,6 +34,7 @@ export default {
     box-sizing: border-box;
     text-decoration: none;
     color: black;
+    
 }
 
 .project {
@@ -44,6 +45,7 @@ export default {
     margin-bottom: 0;
     justify-content: center;
     border-top: 2px solid black;
+    
  
 }
 .project-text-wrap{
@@ -61,9 +63,11 @@ export default {
     height: 65vh;
     background-color: white;
     
+    
 }
 .project-image-wrap{
     height: 50vh;
+    
 }
 
 .image {
@@ -73,7 +77,7 @@ export default {
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    object-fit: none;
+    object-fit: cover;
     object-position: 60% 50%;
     
 

@@ -22,7 +22,7 @@ export default {
       projects: [
         { 
           title: 'Fanø flyer',
-          src: require('/src/assets/fano.png'),
+          src: require('/src/assets/Screenshot.png'),
           id: 1
         },
         { 

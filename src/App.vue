@@ -30,6 +30,7 @@
           
                 <v-row id="main-body" >
                     <SideNav />
+
                     <v-col id="content" lg="9" md="9" sm="8" cols="12">
                         
                         <transition name="view">

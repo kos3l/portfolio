@@ -9,7 +9,12 @@
         <v-col lg="10" md="10" sm="12" id="middle">
           <Banner one="K" two="O" three="S" four="3" five="E" six="L"/>
           <ArticleMe v-for="article in articles" :article="article" :key="article.id" />
-          
+           <v-col id="article">
+                    <div id="wrapper-video">
+                      <iframe src="https://youtube.com/embed/mMedTE1nEYc" id="video" title="Video CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+            </v-col>
         </v-col>
 
         <v-col lg="1" md="1" sm="0" id="column" >
@@ -70,7 +75,14 @@ export default {
 </script>
 
 <style>
-
+#video{
+width: 100%;
+height: 50vh;
+}
+#wrapper-video{
+  width: 100%;
+  height: 50vh;
+}
 #bg{
   width: 100%;
   height: auto;

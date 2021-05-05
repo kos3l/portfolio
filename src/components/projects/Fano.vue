@@ -21,7 +21,9 @@
 <script>
 export default {
     name:'Fano',
-    props: ['fano']
+    props: ['fano'],
+
+
 
 }
 </script>

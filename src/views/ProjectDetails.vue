@@ -10,6 +10,15 @@
           <div v-if="id==1">
           <Banner one="F" two="L"  three="Y" four="E" five="R"/>
             <Fano v-for="fano in fanos" :key="fano.nr" :fano="fano"/>
+          <div id="changeparam">
+
+            <button v-on:click="toTop" id="totop"> 
+              <router-link :to="{ params: { id: 2 }} " id="next">NEXT PROJECT</router-link>
+            </button>
+
+            <button> <span id="next"> TO THE TOP </span></button> 
+
+          </div>
           </div>
 
           <div v-if="id==2">
@@ -19,17 +28,21 @@
               </p>
             </v-col>
             <Design v-for="design in designs" :key="design.nr" :design="design"/>
+            <button id="changeparam"><router-link :to="{ params: { id: 3 }} " id="next">NEXT PROJECT</router-link></button> 
           </div>
 
           <div v-if="id==3">
             <Banner one="G" two="A"  three="M" four="E"/>
             <Tinderbox v-for="tinderbox in tinderboxes" :key="tinderbox.nr" :tinderbox="tinderbox"/>
+            <button id="changeparam"><router-link :to="{ params: { id: 4 }} " id="next">NEXT PROJECT</router-link></button> 
           </div>
 
           <div v-if="id==4">
             <Banner one="W" two="E"  three="B"/>
             <DownUnder v-for="downunder in downunders" :key="downunder.nr" :downunder="downunder"/>
+           <button id="changeparam"> <router-link :to="{ params: { id: 1 }} " id="next">NEXT PROJECT</router-link></button> 
           </div>
+
         </v-col>
 
         <v-col lg="1" md="1" sm="0" id="column">
@@ -46,6 +59,7 @@ import Fano from '/src/components/projects/Fano'
 import DownUnder from '/src/components/projects/DownUnder'
 import Tinderbox from '/src/components/projects/Tinderbox'
 import Design from '/src/components/projects/Design'
+
 export default {
   components: {
     Banner,
@@ -55,8 +69,13 @@ export default {
     Design
     },
     props: ['id'],
+    methods: {
+      toTop() {
+      this.$vuetify.goTo(0)
+    }},
     data() {
         return {
+          
       fanos: [
         {
           title: "INTRODUCTION",
@@ -168,12 +187,27 @@ export default {
         
         ]
         
-    }}
+    }},
+    
 
 }
 </script>
 
 <style>
+
+#changeparam{
+    border-top: 2px solid black;
+    height: 10vh;
+    width: 100%;
+}
+#next{
+
+    color: black;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    font-size: 2vw;
+
+}
 #first-card{
   width: 100%;
   height: 50vh;

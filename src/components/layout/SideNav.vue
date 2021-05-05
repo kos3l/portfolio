@@ -20,7 +20,9 @@
                 <div id="mds">
                   >MULTIMEDIA DESIGN STUDENT
                 </div>
+
               </v-col>
+              
           </v-col>
 </template>
 
@@ -28,6 +30,11 @@
 
 export default {
   name: 'SideNav',
+
+  components: {
+
+    },
+
   
 
 }
@@ -35,12 +42,7 @@ export default {
 
 <style>
 
-#side-nav{
-background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 70%);
 
-
-
-}
 #parent{
   width: 10vw;
   height: auto;
@@ -54,7 +56,10 @@ background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 70
 #side-nav{
   border-right:2px solid black;
   padding: 0;
-  
+  background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 70%);
+  height: auto;
+
+
 
 }
 #profile{
@@ -69,9 +74,10 @@ background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 70
 
 #side-section{
   padding: 30px 20px 20px 30px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
+
 
 }
 
