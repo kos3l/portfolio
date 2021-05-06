@@ -75,12 +75,11 @@ export default {
 
 <style>
 #list{
-  width: 100%;
+  width: 20vw;
   position: absolute;
   bottom: 18vh;
-  right: -2vw;
+  left: 2vw;
 
-  padding-right: 80vw;
 }
 #list ul{
   padding: 0;
@@ -113,6 +112,7 @@ export default {
   border-right:2px solid black;
   padding: 0;
   background: linear-gradient(0deg, rgba(221,203,239,1) 10%, rgba(255,255,255,1) 100%);
+  
 
 }
 
