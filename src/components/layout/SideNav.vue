@@ -1,9 +1,9 @@
 <template>
-  <v-col id="side-nav" lg="3" md="3" sm="4" cols="12" >
-              <v-col id="profile" lg="12" md="12" sm="12">
+  <v-col id="side-nav" lg="3" md="3" sm="4" cols="12" :class="(mode === 'day') ? 'day' : 'night' ">
+              <v-col id="profile" >
 
                     
-                      <div id="parent">
+                      <div id="parent" lg="12" md="12" sm="12">
                       <v-img
                         :src="require('/src/assets/portpic1.jpg')" /> </div>
                     <span id="mds-mobile" >
@@ -15,7 +15,7 @@
                     
 
               </v-col>
-              <v-col id="side-section" lg="12" md="12" sm="12" class="d-none d-sm-flex" >
+              <v-col id="side-section" lg="12" md="12" sm="12" class="d-none d-sm-flex" :class="(mode === 'day') ? 'day' : 'night' ">
                 
                 <div id="mds">
                   >MULTIMEDIA DESIGN STUDENT
@@ -44,6 +44,7 @@
 
 export default {
   name: 'SideNav',
+  props: ['mode'],
 
   components: {},
   data() {
@@ -110,12 +111,31 @@ export default {
 #side-nav{
   border-right:2px solid black;
   padding: 0;
-  background: linear-gradient(0deg, rgba(221,203,239,1) 0%, rgba(255,255,255,1) 70%);
-  height: auto;
-
-
+  background: linear-gradient(0deg, rgba(221,203,239,1) 10%, rgba(255,255,255,1) 100%);
 
 }
+
+.night #side-nav {
+  border-right:2px solid white;
+  padding: 0;
+  background: linear-gradient(0deg, rgba(237,170,222,1) 10%, rgba(0,0,0,1) 70%);
+
+}
+.night #side-nav #profile{
+  border-bottom: 2px solid white;
+  padding: 0;
+  background-color: black;
+
+}
+.night #side-section #mds {
+  color: white;
+  background:  rgba(237,170,222,0);
+}
+.night #side-section{
+  background:  rgba(237,170,222,0);
+}
+
+
 #profile{
   background-color: white;
   border-bottom: 2px solid black;

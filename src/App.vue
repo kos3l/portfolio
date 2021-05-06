@@ -1,35 +1,43 @@
 <template>
 
-    <v-app>
+    <v-app class="app" >
       
-          <v-container id="skeleton" fluid>
+          <v-container id="skeleton" fluid :class="(mode === 'day') ? 'day' : 'night' ">
 
                 <v-row id="top-nav" >
                     <v-col id="dark-mode-btn" lg="3" md="3" sm="4">
                         <div id="links-abt">
                           <router-link :to="{ name: 'Home'}" id="links-abt">
-                          >KAROLINA KOSINSKA
+                         <p>  > KAROLINA KOSINSKA </p>
                           </router-link>
                         </div>
                     </v-col>
-                    <v-col id="nav" lg="9" md="9" sm="8" cols="12">
+                    
+                    <v-col id="nav"  lg="9" md="9" sm="8" cols="12" >
                                   <router-link :to="{ name: 'About'}" >
                                     <button id="nav-button">
-                                    <v-img id="icon-left" :src="require('/src/assets/circle.svg')"></v-img>
-                                    <span id="links"> ABOUT ME </span>
+                                    <v-img v-if="currentPage === '/about'" id="icon-left" :src="require('/src/assets/circle-full.svg')"></v-img>
+                                    <v-img v-else id="icon-left" :src="require('/src/assets/circle.svg')"></v-img>
+                                    <span id="links"> <p> ABOUT ME </p> </span>
                                     </button>
                                   </router-link>
+
+                                  <button>
+                                    <DarkModeToggle :mode="mode" @toggle="toggle"/>
+                                  </button>
+
                                   <router-link :to="{ name: 'Contact'}" >
                                     <button id="nav-button">
-                                    <span id="links"> CONTACT </span>
-                                    <v-img id="icon-right" :src="require('/src/assets/circle.svg')"></v-img>
+                                    <span id="links"> <p> CONTACT</p> </span>
+                                    <v-img v-if="currentPage === '/contact'" id="icon-right" :src="require('/src/assets/circle-full.svg')"></v-img>
+                                    <v-img v-else id="icon-right"  :src="require('/src/assets/circle.svg')"></v-img>
                                     </button>
                                   </router-link>
                     </v-col>
                 </v-row>
           
                 <v-row id="main-body" >
-                    <SideNav />
+                    <SideNav :mode="mode"/>
 
                     <v-col id="content" lg="9" md="9" sm="8" cols="12">
                         
@@ -53,7 +61,7 @@
                                     <span id="links-mobile"> ABOUT ME </span>
                                     </button>
                                   </router-link>
-                                  <v-img id="icon-mobile" :src="require('/src/assets/circle.svg')"></v-img>
+                                  <v-img id="icon-mobile" :src="require('/src/assets/circle-dark-mobile.svg')"></v-img>
                                   <router-link :to="{ name: 'Contact'}" >
                                     <button>
                                     <span id="links-mobile"> CONTACT </span>
@@ -72,6 +80,7 @@
 import SideNav from './components/layout/SideNav'
 import Footer from './components/layout/Footer.vue'
 import BottomBanner from './components/layout/BottomBanner.vue'
+import DarkModeToggle from './components/layout/DarkModeToggle.vue'
 
 
 export default {
@@ -80,17 +89,28 @@ export default {
   components: {
     SideNav,
     Footer,
-    BottomBanner
-  
-    
-    
+    BottomBanner,
+    DarkModeToggle
+  },
+  methods:{
+    toggle() {
+      if (this.mode === 'day') {
+        this.mode = "night"
+      } else {
+        this.mode = 'day'
+      }
+    }
+  },
+  updated() {
+    this.currentPage = this.$router.currentRoute.path;
+    console.info(this.currentPage)
   },
   data() {
     return {
-      
+      currentPage: this.$router.currentRoute.path,
+      mode: 'day'
     };
-  },
-  
+  }
 
 
 };
@@ -98,12 +118,36 @@ export default {
 
 <style>
 
-#app{
+#skeleton{
   text-decoration: none;
-  color: black;
-  
+  transition: background 0.3s ease-in-out;
+
+}
+#skeleton p{
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+
 }
 
+.night{
+  background-color: black;
+  color: white;
+}
+.night p {
+  color: white
+}
+.night #top-nav{
+  border: 2px solid white;
+}
+.night #dark-mode-btn{
+  border-right: 2px solid white;
+  }
+#icon-dark{
+  width: 1.8vw;
+
+}
 #icon-left{
   width: 1.5vw;
   margin-right: 1vw;

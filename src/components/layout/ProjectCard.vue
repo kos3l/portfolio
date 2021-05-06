@@ -1,13 +1,13 @@
 <template>
 
-    <div class="project">
+    <div id="project" :class="(mode === 'day') ? 'day' : 'night' ">
         <router-link :to="{ name: 'ProjectDetails', params: { id: project.id }}"> 
-        <div class="project-inner">
-            <div class="project-image-wrap">
+        <div id="project-inner"> 
+            <div id="project-image-wrap" >
                 <img :src="project.src" class="image">
             </div>
-            <div class="project-text-wrap">
-                <p class="text-center text-uppercase">
+            <div id="project-text-wrap" >
+                <p class="text-center  text-uppercase ">
                     {{ project.title }}
                 </p>
             </div>
@@ -22,7 +22,7 @@
 <script>
 export default {
     name: 'ProjectCard',
-    props: ['project']
+    props: ['project', 'mode']
  
 }
 </script>
@@ -37,7 +37,7 @@ export default {
     
 }
 
-.project {
+#project {
 
     display: flex;
     width: 37.5vw;
@@ -45,28 +45,29 @@ export default {
     margin-bottom: 0;
     justify-content: center;
     border-top: 2px solid black;
-    
- 
+
 }
-.project-text-wrap{
+#project-text-wrap{
     border-top: 2px solid black;
     margin: 0;
     padding-top: 5vh;
     font-weight: 300;
     letter-spacing: 0.1rem;
     font-size: 2vw;
-    
 }
-.project-inner{
+#project-text-wrap p{
+    color: black;
+}
+#project-inner{
     border-right: 2px solid black;
     width: 100%;
     height: 65vh;
     background-color: white;
     
-    
 }
-.project-image-wrap{
+#project-image-wrap{
     height: 50vh;
+    background-color: white;
     
 }
 
@@ -80,6 +81,7 @@ export default {
     object-fit: cover;
     object-position: 60% 50%;
     
+    
 
 }
 
@@ -87,27 +89,45 @@ export default {
     filter: grayscale(0%);
 }
 
+.night #project {
+
+    background: black;
+    
+}
+.night #project #project-inner {
+    border-right: 2px solid white;
+    background: black;
+    border-top: 2px solid white;
+
+}
+
+.night #project #project-text-wrap p{
+    color: white;
+}
+
+
 @media screen and (max-width:1000px) {
-    .project{
+    #project{
         width: 100vw;
         height: 30vh;
         border-bottom: 2px solid black;
         border-right: 2px solid black;
+        
     }
-    .project-inner{
+    #project-inner{
         width: 100%;
         height: 25vh;
         border: 0;
         
     }
-    .project-image-wrap{
+    #project-image-wrap{
     height: 25vh;
     }   
     
     .image{
         height: 25vh;
     }
-     .project-text-wrap{
+     #project-text-wrap{
         
         padding-top: 1vh;
         font-size: 20px;
@@ -116,14 +136,14 @@ export default {
 
 }
 @media screen and (max-width:600px) {
-    .project{
+    #project{
         width: 100vw;
         margin: 0;
         height: 31vh;
         border: 2px solid black;
         
     }
-    .project-inner{
+    #project-inner{
         width: 100%;
         height: 31vh;
         border: 0;
@@ -144,14 +164,14 @@ export default {
         border-left: 2px solid black;
         border-right: 2px solid black;
     }
-    .project-text-wrap{
+    #project-text-wrap{
         
         padding-top: 1vh;
         font-size: 20px;
     
     
 }
-    .project-image-wrap{
+    #project-image-wrap{
         height: 25vh;
     
 }}

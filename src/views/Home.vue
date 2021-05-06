@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div class="home" :mode="mode">
             <Banner one="P" two="R"  three="O" four="J" five="E" six="C" seven="T" eight="S"/> 
-            <ProjectCard v-for="project in projects" :key="project.title" :project="project" />
-            <MobileProjects class=""/>
+            <ProjectCard v-for="project in projects" :key="project.title" :project="project"  :mode="mode"/>
+            <MobileProjects />
             <router-view></router-view>
 
   </div>
@@ -20,6 +20,7 @@ export default {
     Banner,
     MobileProjects
   }, 
+  props: ['mode'],
   data() {
     return {
       projects: [
