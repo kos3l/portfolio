@@ -14,20 +14,12 @@
 
 
                 <div id="text-wrapper">
-                    <div id="write">
-                        <p>DIRECT CONTACT:</p>
-
-                    </div>
                     <div id="details">
                         <p> CONTACT DETAILS:</p>
                     </div>
                 </div>
                 <div id="wrapper1">
-                    <ContactCard />
                     <InfoCard />
-                        
-                    
-
                 </div>
 
             </v-col>
@@ -42,13 +34,11 @@
 
 <script>
 import Banner from '/src/components/layout/Banner'
-import ContactCard from '/src/components/ContactCard'
 import InfoCard from '/src/components/InfoCard'
 export default {
     name: 'Contact',
     components: {
             Banner,
-            ContactCard,
             InfoCard
 
     }
@@ -84,6 +74,7 @@ export default {
   border: 2px solid black;
   border-top: 0;
   border-bottom: 0;
+
   
 }
 
@@ -169,6 +160,7 @@ export default {
 
     #middle-c{
     border-left: 2px solid black;
+    height: 100%;
     }
     #headline{
         padding: 2vh 2vw 0vh 2vw;

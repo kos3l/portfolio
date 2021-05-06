@@ -1,10 +1,14 @@
 <template>
    <div id="info-card">
-                        <div id="detail-content">
-                        <p id="titles">> Email:</p>
-                        <p id="my-info">{{ email }}</p>
-                        <p id="titles">> Phone number:</p>
-                        <p id="my-info">{{ phone }}</p>
+                        <div id="contact-wrap">
+                            <div id="detail-content">
+                            <p id="titles">> Email:</p>
+                            <p id="my-info">{{ email }}</p>
+                            </div>
+                            <div id="detail-content">
+                            <p id="titles">> Phone number:</p>
+                            <p id="my-info">{{ phone }}</p>
+                            </div>
                         </div>
                     <button id="card-button">COPY</button>
     </div>
@@ -26,8 +30,8 @@ export default {
 
 <style>
 #info-card{
-    width: 60%;
-    height: 16vw;
+    width: 100%;
+    height: 27vh;
     background-color: #97EAD2;
     border: 2px solid black;
     height: 100%;
@@ -36,17 +40,23 @@ export default {
     flex-direction: column;
 
 }
+#contact-wrap{
+    display: flex;
+    flex-direction: row;
+    height: 27vh;
+
+}
 #detail-content{
     width: 100%;
-    height: 27vh;
+    height: auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2vh 2vw 2vh 2vw;
+
 }
 #titles {
-    font-size: 1.6vw;
+    font-size: 2vw;
     letter-spacing: 0.1vw;
     text-transform: uppercase;
     color: white;
@@ -56,7 +66,7 @@ export default {
 }
 
 #my-info{
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     letter-spacing: 0.1vw;
     color: white;
     margin-bottom: 3vh;
@@ -67,6 +77,18 @@ export default {
 .night #info-card{
     border: 2px solid white;
     background-color: #97ead341;
+}
+
+#card-button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.night #card-button:hover{
+    background-color: white;
+    color: black;
+
 }
 
 @media screen and (max-width:1264px) {
@@ -114,16 +136,35 @@ export default {
 @media screen and (max-width:600px) {
 
     #titles {
-        font-size: 3vh;
+        font-size: 4vh;
         
     }
 
     #my-info{
-        font-size: 2vh;
+        font-size: 3vh;
 
     }
-    #detail-content{
-        padding: 0vh 0vw 2vh 0vw;
+    #info-card{
+        height: 43vh;
     }
+    #contact-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10vh;
+    height: 27vh;
+}
+        #card-button:focus{
+            background-color: black;
+            color: white;
+
+        }
+
+        .night #card-button:focus{
+            background-color: white;
+            color: black;
+
+        }
+
 }
 </style>
