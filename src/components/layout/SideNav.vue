@@ -93,6 +93,7 @@ export default {
   text-shadow: 3px 3px 3px #D39BE8;
   
 }
+
 #list-look a{
   text-decoration: none;
   color: black;

@@ -269,6 +269,35 @@ export default {
     
     
 }
+.night #totop{
+    border-top: 2px solid white;
+    background-color: black ;
+    color: white;
+}
+
+.night #totop:hover{
+    background-color:white ;
+    color: black;
+}
+.night #next{
+    border-top: 2px solid white;
+    background-color: black ;
+    color: white;
+}
+
+.night #next:hover{
+    background-color:white ;
+    color: black;
+}
+.night #next:hover p{
+    color: black;
+}
+.night #next{
+
+    border-left: 2px solid white;
+
+}
+
 #first-card{
   width: 100%;
   height: 50vh;
