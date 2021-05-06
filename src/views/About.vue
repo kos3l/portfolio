@@ -140,9 +140,7 @@ height: 50vh;
     display: none;
   }
   #top{
-    margin-bottom: 10vh;
-    width: 100%;
-    border-left: 2px solid black;
+    display: none;
   }
 
 }

@@ -10,7 +10,7 @@
                             <p id="my-info">{{ phone }}</p>
                             </div>
                         </div>
-                    <button id="card-button">COPY</button>
+                    <button id="card-button" v-on:click="copyToClipboard('karo7965@easv365.dk  +45 50398333')">COPY</button>
     </div>
 </template>
 
@@ -23,9 +23,18 @@ export default {
             phone: '+45 50398333'
 
         }
-    }
+    },
+    methods: {
+         copyToClipboard(text) {
+            var input = document.body.appendChild(document.createElement("input"));
+            input.value = text;
+            input.focus();
+            input.select();
+            document.execCommand('copy');
+            input.parentNode.removeChild(input);
+            }
 
-}
+}}
 </script>
 
 <style>

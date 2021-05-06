@@ -389,24 +389,24 @@ export default {
     #next{
       font-size: 2vh;
     }
-    #totop:hover{
+    #totop:focus{
 
         background-color:white ;
         color: black;
         
     }
-    #totop:hover p{
+    #totop:focus p{
 
         color: black;
       
     }
-    #next:hover{
+    #next:focus{
 
     background-color:white;
     color: black;
 
 }
-    #next:hover p{
+    #next:focus p{
         margin: 0;
         color: black;
     }
