@@ -118,7 +118,7 @@ export default {
 .night #side-nav {
   border-right:2px solid white;
   padding: 0;
-  background: linear-gradient(0deg, rgba(237,170,222,1) 10%, rgba(0,0,0,1) 70%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(0,0,0,1) 70%);
 
 }
 .night #side-nav #profile{

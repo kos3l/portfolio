@@ -22,7 +22,7 @@
 <script>
 export default {
    name: 'ArticleMe',
-    props:['article']
+    props:['article', 'mode']
 
 }
 </script>
@@ -75,6 +75,22 @@ export default {
     background-color: white;
 }
 
+.night #article{
+
+    border-top: 2px solid white;
+    background-color: black;
+}
+.night #article h1{
+    color: white;
+}
+
+.night #image-wrap{
+    border-top: 2px solid white;
+}
+.night #title{
+    border-top: 2px solid white;
+
+}
 #article h1{
     font-weight: 900;
     color: #C4C4C4;

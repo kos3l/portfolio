@@ -89,15 +89,16 @@ export default {
     filter: grayscale(0%);
 }
 
-.night #project {
-
-    background: black;
-    
-}
 .night #project #project-inner {
     border-right: 2px solid white;
     background: black;
     border-top: 2px solid white;
+
+}
+
+.night #project {
+
+    border-top: none;
 
 }
 

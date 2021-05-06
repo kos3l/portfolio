@@ -140,6 +140,7 @@ export default {
 }
 .night #top-nav{
   border: 2px solid white;
+  border-left: none;
 }
 .night #dark-mode-btn{
   border-right: 2px solid white;

@@ -1,6 +1,6 @@
 <template>
-  <div class="home" :mode="mode">
-            <Banner one="P" two="R"  three="O" four="J" five="E" six="C" seven="T" eight="S"/> 
+  <div id="home">
+            <Banner one="P" two="R"  three="O" four="J" five="E" six="C" seven="T" eight="S" :mode="mode"/> 
             <ProjectCard v-for="project in projects" :key="project.title" :project="project"  :mode="mode"/>
             <MobileProjects />
             <router-view></router-view>
@@ -44,7 +44,7 @@ export default {
           src: require('/src/assets/ilustrejszynFinished.png'),
           id: 4
         },
-      ]
+      ],
     }
   }
 }
@@ -52,17 +52,22 @@ export default {
 
 
 <style>
-.home {
+#home {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   background-color: white;
-
-
 }
+
+.night #home {
+
+  background-color: black;
+}
+
+
 @media screen and (max-width:600px) {
-  .home{
+  #home{
     padding-bottom: 10vh;
 }
 }

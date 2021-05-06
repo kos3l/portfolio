@@ -1,6 +1,6 @@
 <template>
-    <v-col id="banner" lg="12" md="12" sm="12" class="d-none d-sm-flex" >
-        <p id="homepage-1"> 
+    <v-col id="banner" lg="12" md="12" sm="12" class="d-none d-sm-flex" :class="(mode === 'day') ? 'day' : 'night' ">
+        <p id="homepage-1" > 
             <span>{{ one }}</span>
             <span>{{ two }}</span>
             <span>{{ three }}</span>
@@ -18,7 +18,7 @@
 
 export default {
     name: 'Banner',
-    props: ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight']
+    props: ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'mode']
     
 }
 
@@ -52,13 +52,35 @@ export default {
         overflow: hidden;
         width: 100%;
     }
+     p span {
+        transition: color 2s;
+        color: white;
+    }
+
     p span:hover {
     color:  #3CD5B7;
     transition: color 0s;
     }
-    p span {
+    
+
+
+.night #banner {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255) 90%);
+}
+
+.night #banner #homepage-1{
+        color: black;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: white;
+
+    }
+.night #banner  p span {
         transition: color 2s;
-        color: white;
+        color: black;
+    }
+.night #banner p span:hover {
+    color:  white;
+    transition: color 0s;
     }
 
 

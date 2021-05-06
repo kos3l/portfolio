@@ -8,7 +8,7 @@
 
         <v-col lg="10" md="10" sm="12" id="middle">
           <Banner one="K" two="O" three="S" four="3" five="E" six="L"/>
-          <ArticleMe v-for="article in articles" :article="article" :key="article.id" />
+          <ArticleMe v-for="article in articles" :article="article" :key="article.id" :mode='mode' />
            <v-col id="article">
                     <div id="wrapper-video">
                       <iframe src="https://youtube.com/embed/mMedTE1nEYc" id="video" title="Video CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -40,6 +40,7 @@ export default {
     ArticleMe,
     TopButton
   },
+  props: [' mode '],
   data() {
         return {
           articles: [
@@ -97,6 +98,8 @@ height: 50vh;
   height: auto;
   background-color: grey;
 }
+
+
 #main-row {
   height: auto;
   width: 100%;
@@ -111,7 +114,17 @@ height: 50vh;
   border-top: 0;
 
 }
+.night #bg{
+  background-color: grey;
+}
+.night #middle{
+  background-color: black;
+  padding: 0;
+  border: 2px solid white;
+  border-bottom: 0;
+  border-top: 0;
 
+}
 @media screen and (max-width:900px) {
   #column{
     display: none;
