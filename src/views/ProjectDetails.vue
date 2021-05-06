@@ -305,6 +305,16 @@ export default {
   border-top: 0;
 
 }
+.night #middle-projects{
+
+  border: 2px solid white;
+
+
+}
+.night #first-card{
+  background-color: black;
+  border-top: 2px solid white;
+}
 @media screen and (max-width:1263px) {
     #first-card{
 

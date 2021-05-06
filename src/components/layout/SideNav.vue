@@ -62,7 +62,8 @@ export default {
           name: '@FANØ FLYER',
           src: 'https://drive.google.com/file/d/1ci0IzsI_EWa0eNzthsxx4jcJjOlKrOmq/view?usp=sharing'
         },
-      ]
+      ],
+      currentPage: this.$router.currentRoute.path, 
     }
   }
     
@@ -76,7 +77,7 @@ export default {
 #list{
   width: 100%;
   position: absolute;
-  bottom: 26vh;
+  bottom: 18vh;
   right: -2vw;
 
   padding-right: 80vw;
@@ -86,10 +87,10 @@ export default {
 }
 #list-look{
   list-style-type: none;
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: 300;
   letter-spacing: 0.1rem;
-  padding-bottom: 4vh;
+  padding-bottom: 3vh;
   text-shadow: 3px 3px 3px #D39BE8;
   
 }

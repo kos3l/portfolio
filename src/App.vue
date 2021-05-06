@@ -37,7 +37,7 @@
                 </v-row>
           
                 <v-row id="main-body" >
-                    <SideNav :mode="mode"/>
+                    <SideNav  :mode="mode"/>
 
                     <v-col id="content" lg="9" md="9" sm="8" cols="12">
                         

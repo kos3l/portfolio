@@ -64,6 +64,11 @@ export default {
     text-shadow: 3px 3px 3px #45CB9D;
 }
 
+.night #info-card{
+    border: 2px solid white;
+    background-color: #97ead341;
+}
+
 @media screen and (max-width:1264px) {
     #info-card{
     width: 100%;

@@ -48,6 +48,16 @@ export default {
     font-size: 2vw;
 
 }
+
+.night #article-f {
+    background-color: black;
+    border-top: 2px solid white;
+
+}
+.night #title {
+    background-color: black;
+
+}
 #name{
 
     font-weight: 900;
@@ -58,6 +68,7 @@ export default {
 @media screen and (max-width:1264px) {
     #article-f{
         height: 50vh;
+        
     }
 }
 @media screen and (max-width:600px) {

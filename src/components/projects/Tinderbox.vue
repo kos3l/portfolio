@@ -61,6 +61,10 @@ export default {
     font-size: 3vw;
     padding-bottom: 2vh;
 }
+.night #article-t{
+    background-color: black;
+    border-top: 2px solid white;
+}
 @media screen and (max-width:1264px) {
     #article-t{
         height: 50vh;

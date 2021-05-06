@@ -36,7 +36,6 @@ export default {
     flex-direction: column;
     margin-right: 3.5vw;
 
-
 }
 #form-card{
     margin-left: 2vw;
@@ -56,6 +55,10 @@ export default {
     font-weight: 400;
     text-shadow: 3px 3px 3px #45CB9D;
     
+}
+.night #input-card{
+    border: 2px solid white;
+    background-color: #97ead341;
 }
 
 #input-box{

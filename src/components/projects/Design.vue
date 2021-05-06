@@ -35,6 +35,12 @@ export default {
     border: 2px solid black;
     
 }
+.night #slides-container {
+    background-color: black;
+    border-top: 2px solid white;
+
+}
+
 @media screen and (max-width:600px) {
     #image-wrap-design{
         border-top: 2px solid black;

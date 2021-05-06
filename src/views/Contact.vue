@@ -121,6 +121,27 @@ export default {
     
 }
 
+.night #middle-c{
+  background-color: black;
+  border: 2px solid white;
+
+}
+.night #headline {
+
+    border-top: 2px solid white;
+    color: white;
+}
+.night #headline i{
+
+    color: white;
+}
+.night #card-button{
+    background-color: black;
+    border-top: 2px solid white;
+}
+.night #card-button{
+    color: white
+}
 @media screen and (max-width:1264px) {
     #wrapper1{
         flex-direction: column;
