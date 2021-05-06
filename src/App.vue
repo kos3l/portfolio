@@ -61,7 +61,7 @@
                                     <span id="links-mobile"> ABOUT ME </span>
                                     </button>
                                   </router-link>
-                                  <v-img id="icon-mobile" :src="require('/src/assets/circle-dark-mobile.svg')"></v-img>
+                                  <DarkModeToggle :mode="mode" @toggle="toggle"/>
                                   <router-link :to="{ name: 'Contact'}" >
                                     <button>
                                     <span id="links-mobile"> CONTACT </span>
@@ -278,8 +278,18 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
-    
+
+ }
+ .night #bottom-nav {
+
+    background-color: black;
+    border: 2px solid white;
+
+
+ }
+
+ .night #links-mobile{
+   color: white;
  }
   #bottom-bar{
     z-index: 4444;
@@ -304,10 +314,7 @@ export default {
     height: 30vh;
 
   }
-  #icon-mobile{
-      max-width: 30px;
-      height: 30px;
-    }
+
 
 
 }

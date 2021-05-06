@@ -115,6 +115,7 @@ export default {
         border-right: 2px solid black;
         
     }
+   
     #project-inner{
         width: 100%;
         height: 25vh;
@@ -144,6 +145,12 @@ export default {
         border: 2px solid black;
         
     }
+     .night #project{
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        
+    }
     #project-inner{
         width: 100%;
         height: 31vh;
@@ -155,6 +162,7 @@ export default {
         -webkit-filter: none;
         filter: none;
         object-position: 70% 40%;
+        border-bottom: 2px solid black;
     }
     #main-body{
 
@@ -166,12 +174,17 @@ export default {
         border-right: 2px solid black;
     }
     #project-text-wrap{
-        
+
         padding-top: 1vh;
         font-size: 20px;
-    
+        
     
 }
+    .night  #project-text-wrap{
+        
+      border-top: 2px solid white
+        }   
+
     #project-image-wrap{
         height: 25vh;
     

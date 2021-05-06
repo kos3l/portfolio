@@ -123,7 +123,7 @@ export default {
 
     }
     #detail-content{
-        padding: 2.5vh 0vw 0vh 0vw;
+        padding: 0vh 0vw 2vh 0vw;
     }
 }
 </style>

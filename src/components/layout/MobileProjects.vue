@@ -53,6 +53,13 @@ export default {
 
 
 }
+.night #mobile-projects{
+
+        border: 2px solid white;
+        border-bottom: 0;
+
+
+}
 #list-look-mobile{
 
     list-style-type: none;

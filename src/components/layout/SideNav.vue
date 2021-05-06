@@ -125,7 +125,6 @@ export default {
 }
 .night #side-nav #profile{
   border-bottom: 2px solid white;
-  padding: 0;
   background-color: black;
 
 }
@@ -184,6 +183,24 @@ export default {
     #side-nav{
         border-right: 0;
         border-top: 2px solid black;
+    }
+    .night #side-nav{
+
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+    }
+
+    .night #link-mobile {
+
+      color: white;
+    }
+    .night #profile{
+        height: 30vh;
+        display: flex;
+        justify-content: right;
+        padding-left: 45px;
+        flex-direction: row;
+        transform: translateY(2px);
     }
     #profile{
         height: 30vh;

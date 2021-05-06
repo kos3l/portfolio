@@ -35,6 +35,19 @@ export default {
     width: 0;
     height: 0;
 }
+    @media screen and (max-width:600px) {
+
+        .toggle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 8vw;
+        }
+        .toggle-wrapper{
+            width: 8vw;
+    }
+
+    }
 
 
 </style>r
