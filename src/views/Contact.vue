@@ -139,6 +139,9 @@ export default {
 .night #card-button {
   color: white;
 }
+.night #some-c {
+  color: white;
+}
 @media screen and (max-width: 1264px) {
   #wrapper1 {
     flex-direction: column;
