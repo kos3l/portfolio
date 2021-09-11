@@ -38,6 +38,7 @@ export default {
   margin-bottom: 0;
   justify-content: center;
   border-top: 2px solid black;
+  background-color: white;
 }
 #project a {
   width: 100%;
@@ -81,7 +82,7 @@ export default {
 
 .night #project #project-inner {
   border-right: 2px solid white;
-  background: black;
+  background-color: black;
   border-top: 2px solid white;
 }
 
@@ -115,8 +116,7 @@ export default {
   #project-text-wrap {
     padding: 1rem;
     font-size: 1rem;
-    background-color: white;
-    border-top: o;
+    border-top: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -125,16 +125,14 @@ export default {
     margin: 0;
     height: auto;
     border: 2px solid black;
+    background-color: white;
   }
-  .night #project {
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-    border-left: 2px solid white;
-  }
+
   #project-inner {
     width: 100%;
     height: auto;
     border: 0;
+    background-color: white;
   }
 
   .image {
@@ -154,14 +152,24 @@ export default {
   #project-text-wrap {
     padding: 1rem;
     font-size: 0.9rem;
-  }
-  .night #project-text-wrap {
     border-top: 2px solid white;
-    background-color: black;
   }
 
   #project-image-wrap {
     height: 25vh;
+  }
+  .night #project {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    background-color: black;
+  }
+
+  .night #project #project-inner {
+    border-right: 2px solid white;
+    background-color: black;
+    border-top: 2px solid white;
+    background-color: black;
   }
 }
 </style>
