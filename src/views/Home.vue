@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ProjectCard from "/Users/karolinakosinska/Desktop/portfolio/src/components/layout/ProjectCard";
+import ProjectCard from "/src/components/layout/ProjectCard";
 import Banner from "/src/components/layout/Banner";
 import MobileProjects from "/src/components/layout/MobileProjects";
 export default {
