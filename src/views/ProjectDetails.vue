@@ -45,7 +45,7 @@
           </div>
 
           <div v-if="id == 3">
-            <Banner one="G" two="A" three="M" four="E" />
+            <Banner one="W" two="E" three="B" />
             <Vester
               v-for="vester in vesters"
               :key="vester.nr"

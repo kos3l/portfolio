@@ -26,12 +26,12 @@ export default {
   width: 5vw;
   display: flex;
   justify-content: center;
-  cursor: pointer;
 }
 .toggle {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .toggle input {
   opacity: 0;
