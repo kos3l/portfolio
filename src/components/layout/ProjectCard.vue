@@ -157,6 +157,7 @@ export default {
   }
   .night #project-text-wrap {
     border-top: 2px solid white;
+    background-color: black;
   }
 
   #project-image-wrap {
